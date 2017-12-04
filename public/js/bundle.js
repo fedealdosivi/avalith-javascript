@@ -13930,7 +13930,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.side-input{\n\twidth: 240px;\n\theight: 1px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\theight: 14px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\theight: 18px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\theight: 14px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
+exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
 
 // exports
 
@@ -14167,7 +14167,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tz-index: 50;\n}\n.container{\n\tmargin-left: 330px;\n}\n", ""]);
+exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.container{\n\tmargin-left: 330px;\n}\n", ""]);
 
 // exports
 
@@ -14419,7 +14419,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n    width: 500px;\n    background-color: white;\n    padding: 30px;\n    margin-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 500px;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n}\n.card:hover {\n\t    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n.container {\n\t    padding: 2px 16px;\n}\n\n", ""]);
 
 // exports
 
@@ -14434,6 +14434,9 @@ exports.push([module.i, "\n.card {\n    width: 500px;\n    background-color: whi
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
 //
 //
 //
@@ -14455,7 +14458,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
-    _vm._v("\n    " + _vm._s(_vm.language.cardTitle) + "\n")
+    _c("img", { attrs: { src: _vm.language.cardImageUrl } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n    ")
+    ])
   ])
 }
 var staticRenderFns = []
@@ -14480,12 +14487,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "dash-menu" }, [
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "dash-title" }, [
-        _vm._v("Languages and Technologies")
-      ]),
+      _vm._m(0),
       _vm._v(" "),
       !_vm.languages.length
-        ? _c("div")
+        ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
         : _c(
             "div",
             _vm._l(_vm.languages, function(l) {
@@ -14495,7 +14500,16 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dash-title" }, [
+      _c("h3", [_vm._v("Languages and Technologies")])
+    ])
+  }
+]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

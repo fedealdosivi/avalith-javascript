@@ -41,7 +41,7 @@
 	width: 300px;
 	height: 135px;
 	margin-top: 0px;
-	margin-left: 0;
+	margin-left: 0px;
 	z-index: 55;
 	position: fixed;
 }
@@ -66,7 +66,6 @@
 
 .side-input{
 	width: 240px;
-	height: 1px;
 	background-color: #020202;
 	background-color: var(--black-two);
 	border: solid 5px #ffffff;
@@ -78,7 +77,6 @@
 
 .Search-in-cards {
 	width: 123px;
-	height: 14px;
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;
@@ -92,7 +90,6 @@
 	margin-left: 31px;
 	margin-top: 319px;
 	width: 63px;
-	height: 18px;
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;
@@ -103,7 +100,6 @@
 }
 
 .check-options{
-	height: 14px;
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;

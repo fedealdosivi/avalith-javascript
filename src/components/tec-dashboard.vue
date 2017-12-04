@@ -1,8 +1,8 @@
 <template>
 	<div class="dash-menu">
 		<div class="container">
-			<div class="dash-title">Languages and Technologies</div>
-			<div v-if="!languages.length"></div>
+			<div class="dash-title"><h3>Languages and Technologies</h3></div>
+			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
 			<div v-else>
 				<tec-card v-for="l in languages" :key=l.cardId :language="l"></tec-card>
 			</div>
@@ -42,6 +42,7 @@
 		width: 1366px;
 		height: 768px;
 		margin-top: 60px;
+		margin-left: 0px;
 		z-index: 50;
 	}
 
