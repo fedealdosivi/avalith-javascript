@@ -28,5 +28,9 @@
 		background-color: black;
 		width: 1366px;
 		height: 60px;
+		z-index: 100;
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 </style>

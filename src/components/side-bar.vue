@@ -1,40 +1,133 @@
 <template>
     <div v-if="isMenuOpen" class="side-menu">
-		<div class="side-user"></div>
-		<input placeholder="Placeholder" id="first_name" type="text" class="side-input">
-		<label for="first_name">First Name</label>
+		<div class="side-user">
+			<div class="user-data">
+				<div margin-top="91" margin-left="93" witdth="132" height="13">{{this.user.name}}</div>
+				<div margin-top="122" margin-left="85" witdth="132" height="13">{{this.user.dni}}</div>
+				<div margin-top="150" margin-left="89" witdth="132" height="13">{{this.user.years}}</div>
+			</div>
+		</div>
+		<input placeholder="Search in Cards" type="text" class="side-input">
+		<div class="Filter-by">Filter by</div>
+		<div>
+			<input class="Frontend" type="checkbox" name="filter" value="frontend">Frontend<br>
+			<input class="Backend" type="checkbox" name="filter" value="backend">Backend<br>
+		</div>
     </div>
 </template>
 
 <script>
     export default {
     	name: 'sideBar',
-    	props: ['isMenuOpen']
-    }
+    	props: ['isMenuOpen'],
+        data() {
+	        	return{
+	        		user:{
+	        			name:'DEV NAME',
+	        			dni:'DNI XX.XXX.XXX',
+	        			years: 'XX YEARS OLD'
+	        		}
+	        	}
+	        },
+	        methods: {
+
+	        }
+	    }
 </script>
 
 <style>
 .side-user {
-	background-color: grey;
+	background-color: #323335;
 	width: 300px;
 	height: 135px;
-	top: 60px;
-	left: 0;
+	margin-top: 0px;
+	margin-left: 0;
+	z-index: 55;
+	position: fixed;
 }
 
 .side-menu{
 	background-color: black;
 	width: 300px;
 	height: 708px;
-	top: 60px;
-	left: 0;
+	margin-top:  0px;
+	margin-left: 0px;
+	z-index: 50;
+	position: fixed;
 }
 
+.user-data{
+	margin-top: 30px;
+	color: white;
+	size: 24px;
+	letter-spacing: 0.2px;
+	text-align: center;
+} 
+
 .side-input{
-	background-color: black;
-	width: 30px;
+	width: 240px;
 	height: 1px;
-	top:30px;
-	left:268px;
+	background-color: #020202;
+	background-color: var(--black-two);
+	border: solid 5px #ffffff;
+	margin-top:268px;
+	margin-left:30px;
+	z-index: 50;
+	position: fixed;
 }
+
+.Search-in-cards {
+	width: 123px;
+	height: 14px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #f8f8f8;
+}
+
+.Filter-by {
+	margin-left: 31px;
+	margin-top: 319px;
+	width: 63px;
+	height: 18px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #f8f8f8;
+}
+
+.Frontend {
+	margin-left: 76px;
+	margin-top: 374px;
+	width: 70px;
+	height: 14px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #f8f8f8;
+}
+
+.Backend {
+	margin-left: 76px;
+	margin-top: 419px;
+	width: 67px;
+	height: 14px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #f8f8f8;
+}
+
 </style>

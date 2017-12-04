@@ -13,7 +13,6 @@
 	        },
 	        data() {
 	        	return{
-
 	        	}
 	        },
 	        methods: {
@@ -24,8 +23,11 @@
 
 <style>
 	.dash-menu{
-		background-color: grey;
-		top: 60px;
-		left: 135px;
+		background-color: #afafaf;
+		width: 1366px;
+		height: 768px;
+		margin-top: 60px;
+		margin-left: 0px;
+		z-index: 50;
 	}
 </style>

@@ -1,6 +1,8 @@
 
 h3{
-	color: red;
+	color: white;
+	size: 24px;
+	letter-spacing: 0.2px;
 }
 
 h4{
@@ -16,9 +18,5 @@ h5{
 }
 
 body{
-	background: white;
-}
-
-label{
-	color: purple;
+	background: grey;
 }
