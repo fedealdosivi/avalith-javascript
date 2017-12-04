@@ -13740,7 +13740,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.nav-wrapper{\n\tbackground-color: black;\n\twidth: 1366px;\n\theight: 60px;\n\tz-index: 100;\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n}\n", ""]);
+exports.push([module.i, "\n.nav-wrapper{\n\tbackground-color: black;\n\twidth: 1366px;\n\theight: 60px;\n\tz-index: 100;\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n}\n", ""]);
 
 // exports
 
@@ -13930,7 +13930,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
+exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\theight: 13px;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
 
 // exports
 
@@ -13999,8 +13999,7 @@ var render = function() {
                 attrs: {
                   "margin-top": "91",
                   "margin-left": "93",
-                  witdth: "132",
-                  height: "13"
+                  witdth: "132"
                 }
               },
               [_vm._v(_vm._s(this.user.name))]
@@ -14012,8 +14011,7 @@ var render = function() {
                 attrs: {
                   "margin-top": "122",
                   "margin-left": "85",
-                  witdth: "132",
-                  height: "13"
+                  witdth: "132"
                 }
               },
               [_vm._v(_vm._s(this.user.dni))]
@@ -14025,8 +14023,7 @@ var render = function() {
                 attrs: {
                   "margin-top": "150",
                   "margin-left": "89",
-                  witdth: "132",
-                  height: "13"
+                  witdth: "132"
                 }
               },
               [_vm._v(_vm._s(this.user.years))]
@@ -14167,7 +14164,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.container{\n\tmargin-left: 330px;\n}\n", ""]);
+exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.container-toggle{\n\tmargin-left: 330px;\n}\n.container{\n\tmargin-left: 0px;\n}\n", ""]);
 
 // exports
 
@@ -14180,7 +14177,7 @@ exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+			value: true
 });
 
 var _lanService = __webpack_require__(25);
@@ -14205,27 +14202,39 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-    name: 'tecDashboard',
-    components: {
-        tecCard: _tecCard2.default
-    },
-    data: function data() {
-        return {
-            languages: []
-        };
-    },
-    created: function created() {
-        this.languages = this.getLanguages();
-    },
+			name: 'tecDashboard',
+			props: ['isMenuOpen'],
+			components: {
+						tecCard: _tecCard2.default
+			},
+			data: function data() {
+						return {
+									languages: []
+						};
+			},
+			created: function created() {
+						this.languages = this.getLanguages();
+			},
 
 
-    methods: {
-        getLanguages: function getLanguages() {
-            return _lanService2.default.getLanguages();
-        }
-    }
+			methods: {
+						getLanguages: function getLanguages() {
+									return _lanService2.default.getLanguages();
+						}
+			}
 };
 
 /***/ }),
@@ -14458,7 +14467,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
-    _c("img", { attrs: { src: _vm.language.cardImageUrl } }),
+    _c("img", { attrs: { src: _vm.language.cardImageUrl, width: "80%" } }),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n    ")
@@ -14486,18 +14495,43 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "dash-menu" }, [
-    _c("div", { staticClass: "container" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      !_vm.languages.length
-        ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
-        : _c(
-            "div",
-            _vm._l(_vm.languages, function(l) {
-              return _c("tec-card", { key: l.cardId, attrs: { language: l } })
-            })
-          )
-    ])
+    _vm.isMenuOpen
+      ? _c("div", [
+          _c("div", { staticClass: "container-toggle" }, [
+            _c("h3", { staticClass: "dash-title" }, [
+              _vm._v("Languages and Technologies")
+            ]),
+            _vm._v(" "),
+            !_vm.languages.length
+              ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
+              : _c(
+                  "div",
+                  _vm._l(_vm.languages, function(l) {
+                    return _c("tec-card", {
+                      key: l.cardId,
+                      attrs: { language: l }
+                    })
+                  })
+                )
+          ])
+        ])
+      : _c("div", [
+          _c("div", { staticClass: "container" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            !_vm.languages.length
+              ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
+              : _c(
+                  "div",
+                  _vm._l(_vm.languages, function(l) {
+                    return _c("tec-card", {
+                      key: l.cardId,
+                      attrs: { language: l }
+                    })
+                  })
+                )
+          ])
+        ])
   ])
 }
 var staticRenderFns = [
@@ -14537,7 +14571,7 @@ var render = function() {
       _vm._v(" "),
       _c("side-bar", { attrs: { isMenuOpen: _vm.isMenuOpen } }),
       _vm._v(" "),
-      _c("tecDashboard")
+      _c("tecDashboard", { attrs: { isMenuOpen: _vm.isMenuOpen } })
     ],
     1
   )

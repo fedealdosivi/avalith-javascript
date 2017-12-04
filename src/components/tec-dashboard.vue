@@ -1,5 +1,15 @@
 <template>
-	<div class="dash-menu">
+<div class="dash-menu">
+	<div v-if="isMenuOpen">
+		<div class="container-toggle">
+			<h3 class="dash-title">Languages and Technologies</h3>
+			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
+			<div v-else>
+				<tec-card v-for="l in languages" :key=l.cardId :language="l"></tec-card>
+			</div>
+		</div>
+	</div>
+	<div v-else>
 		<div class="container">
 			<div class="dash-title"><h3>Languages and Technologies</h3></div>
 			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
@@ -8,6 +18,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </template>
 
 <script>
@@ -15,6 +26,7 @@
 	import tecCard from './tec-card.vue';
 	export default {
 	        name: 'tecDashboard',
+    		props: ['isMenuOpen'],	        
 	        components: {
 	            tecCard
 	        },
@@ -46,7 +58,11 @@
 		z-index: 50;
 	}
 
-	.container{
+	.container-toggle{
 		margin-left: 330px;
+	}
+
+	.container{
+		margin-left: 0px;
 	}
 </style>

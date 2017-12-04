@@ -2,7 +2,7 @@
     <div class="app">
         <top-menu @toggleMenu="toggleMenu"></top-menu>
         <side-bar :isMenuOpen="isMenuOpen"></side-bar>
-        <tecDashboard></tecDashboard>
+        <tecDashboard :isMenuOpen="isMenuOpen"></tecDashboard>
         
     </div>
 </template>

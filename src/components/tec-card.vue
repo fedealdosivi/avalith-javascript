@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-    	<img :src="language.cardImageUrl">
+    	<img :src="language.cardImageUrl" width="80%">
         <div class="container">
         	{{ language.cardDescription}}
         </div>
