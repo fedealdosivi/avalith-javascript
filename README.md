@@ -1,6 +1,6 @@
 ### Avalith Challenge
 
-step1: cd avalith-javascript.
-step2: npm install.
-step3: npm start.
+1. cd avalith-javascript.
+2. npm install.
+3. npm start.
 
