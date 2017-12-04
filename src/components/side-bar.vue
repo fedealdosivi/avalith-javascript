@@ -9,9 +9,9 @@
 		</div>
 		<input placeholder="Search in Cards" type="text" class="side-input">
 		<div class="Filter-by">Filter by</div>
-		<div>
-			<input class="Frontend" type="checkbox" name="filter" value="frontend">Frontend<br>
-			<input class="Backend" type="checkbox" name="filter" value="backend">Backend<br>
+		<div class="check-options">
+			<input class="Frontend" type="radio" name="filter" value="frontend">Frontend<br>
+			<input class="Backend" type="radio" name="filter" value="backend">Backend<br>
 		</div>
     </div>
 </template>
@@ -102,24 +102,7 @@
 	color: #f8f8f8;
 }
 
-.Frontend {
-	margin-left: 76px;
-	margin-top: 374px;
-	width: 70px;
-	height: 14px;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 1.33;
-	letter-spacing: 0.2px;
-	text-align: left;
-	color: #f8f8f8;
-}
-
-.Backend {
-	margin-left: 76px;
-	margin-top: 419px;
-	width: 67px;
+.check-options{
 	height: 14px;
 	font-family: Roboto;
 	font-size: 18px;
