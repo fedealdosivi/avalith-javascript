@@ -7,11 +7,12 @@
 				<div margin-top="150" margin-left="89" witdth="132" >{{this.user.years}}</div>
 			</div>
 		</div>
-		<input placeholder="Search in Cards" type="text" class="side-input">
+		<input placeholder="Search in Cards" v-model="filter" type="text" class="side-input">
 		<div class="Filter-by">Filter by</div>
+		<br>
 		<div class="check-options">
-			<input class="Frontend" type="radio" name="filter" value="frontend">Frontend<br>
-			<input class="Backend" type="radio" name="filter" value="backend">Backend<br>
+			<input class="Frontend" v-model="selectedOption" type="radio" name="filter" value="frontend">Frontend<br>
+			<input class="Backend" v-model="selectedOption" type="radio" name="filter" value="backend">Backend<br>
 		</div>
     </div>
 </template>
@@ -26,7 +27,9 @@
 	        			name:'DEV NAME',
 	        			dni:'DNI XX.XXX.XXX',
 	        			years: 'XX YEARS OLD'
-	        		}
+	        		},
+	        		selectedOption:'frontend',
+	        		filter:''
 	        	}
 	        },
 	        methods: {
@@ -68,8 +71,7 @@
 
 .side-input{
 	width: 240px;
-	background-color: #020202;
-	background-color: var(--black-two);
+	background-color: white;
 	border: solid 5px #ffffff;
 	margin-top:268px;
 	margin-left:30px;
@@ -107,8 +109,8 @@
 	font-weight: 300;
 	line-height: 1.33;
 	letter-spacing: 0.2px;
-	text-align: left;
 	color: #f8f8f8;
+	margin-left: 30px;
 }
 
 </style>

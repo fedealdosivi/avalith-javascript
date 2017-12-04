@@ -13930,7 +13930,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\theight: 13px;\n\tmargin-left: 0px;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
+exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\theight: 13px;\n\tmargin-left: 0px;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: white;\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n\tmargin-left: 30px;\n}\n\n", ""]);
 
 // exports
 
@@ -13963,6 +13963,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 exports.default = {
 				name: 'sideBar',
@@ -13973,7 +13974,9 @@ exports.default = {
 																name: 'DEV NAME',
 																dni: 'DNI XX.XXX.XXX',
 																years: 'XX YEARS OLD'
-												}
+												},
+												selectedOption: 'frontend',
+												filter: ''
 								};
 				},
 
@@ -14032,38 +14035,78 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.filter,
+              expression: "filter"
+            }
+          ],
           staticClass: "side-input",
-          attrs: { placeholder: "Search in Cards", type: "text" }
+          attrs: { placeholder: "Search in Cards", type: "text" },
+          domProps: { value: _vm.filter },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.filter = $event.target.value
+            }
+          }
         }),
         _vm._v(" "),
         _c("div", { staticClass: "Filter-by" }, [_vm._v("Filter by")]),
         _vm._v(" "),
-        _vm._m(0)
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "check-options" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.selectedOption,
+                expression: "selectedOption"
+              }
+            ],
+            staticClass: "Frontend",
+            attrs: { type: "radio", name: "filter", value: "frontend" },
+            domProps: { checked: _vm._q(_vm.selectedOption, "frontend") },
+            on: {
+              __c: function($event) {
+                _vm.selectedOption = "frontend"
+              }
+            }
+          }),
+          _vm._v("Frontend"),
+          _c("br"),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.selectedOption,
+                expression: "selectedOption"
+              }
+            ],
+            staticClass: "Backend",
+            attrs: { type: "radio", name: "filter", value: "backend" },
+            domProps: { checked: _vm._q(_vm.selectedOption, "backend") },
+            on: {
+              __c: function($event) {
+                _vm.selectedOption = "backend"
+              }
+            }
+          }),
+          _vm._v("Backend"),
+          _c("br")
+        ])
       ])
     : _vm._e()
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "check-options" }, [
-      _c("input", {
-        staticClass: "Frontend",
-        attrs: { type: "radio", name: "filter", value: "frontend" }
-      }),
-      _vm._v("Frontend"),
-      _c("br"),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "Backend",
-        attrs: { type: "radio", name: "filter", value: "backend" }
-      }),
-      _vm._v("Backend"),
-      _c("br")
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14213,6 +14256,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 			name: 'tecDashboard',
@@ -14222,7 +14271,8 @@ exports.default = {
 			},
 			data: function data() {
 						return {
-									languages: []
+									languages: [],
+									language: null
 						};
 			},
 			created: function created() {
@@ -14233,6 +14283,9 @@ exports.default = {
 			methods: {
 						getLanguages: function getLanguages() {
 									return _lanService2.default.getLanguages();
+						},
+						getLanguageById: function getLanguageById(openCardId) {
+									this.language = _lanService2.default.getLanguageById(openCardId);
 						}
 			}
 };
@@ -14335,6 +14388,16 @@ var languages = [{
 exports.default = {
     getLanguages: function getLanguages() {
         return languages;
+    },
+    getCardById: function getCardById(id) {
+        var languages = this.getLanguages();
+        var filtro = [];
+        languages.forEach(function (l) {
+            if (l.cardId == id) {
+                filtro.push(l);
+            }
+        });
+        return filtro;
     }
 };
 
@@ -14451,10 +14514,21 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 exports.default = {
     name: 'tecCard',
-    props: ['language']
+    props: ['language'],
+    data: function data() {
+        return {};
+    },
+
+
+    methods: {
+        openCard: function openCard() {
+            this.$emit('getLanguageById', language.cardId);
+        }
+    }
 };
 
 /***/ }),
@@ -14470,7 +14544,8 @@ var render = function() {
     _c("img", { attrs: { src: _vm.language.cardImageUrl, width: "80%" } }),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
-      _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n    ")
+      _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n        "),
+      _c("button", { on: { click: _vm.openCard } }, [_vm._v("Details")])
     ])
   ])
 }
@@ -14497,40 +14572,46 @@ var render = function() {
   return _c("div", [
     _vm.isMenuOpen
       ? _c("div", [
-          _c("div", { staticClass: "dash-toggle" }, [
-            _c("h3", { staticClass: "dash-title" }, [
-              _vm._v("Languages and Technologies")
-            ]),
-            _vm._v(" "),
-            !_vm.languages.length
-              ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
-              : _c(
-                  "div",
-                  _vm._l(_vm.languages, function(l) {
-                    return _c("tec-card", {
-                      key: l.cardId,
-                      attrs: { language: l }
-                    })
-                  })
-                )
-          ])
+          _vm.language != null
+            ? _c("div", [
+                _vm._v("\n\t\t\t" + _vm._s(_vm.language.cardTittle) + "\n\t\t")
+              ])
+            : _c("div", { staticClass: "dash-toggle" }, [
+                _c("h3", { staticClass: "dash-title" }, [
+                  _vm._v("Languages and Technologies")
+                ]),
+                _vm._v(" "),
+                !_vm.languages.length
+                  ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
+                  : _c(
+                      "div",
+                      _vm._l(_vm.languages, function(l) {
+                        return _c("tec-card", {
+                          key: l.cardId,
+                          attrs: { language: l }
+                        })
+                      })
+                    )
+              ])
         ])
       : _c("div", [
-          _c("div", { staticClass: "dash-menu" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            !_vm.languages.length
-              ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
-              : _c(
-                  "div",
-                  _vm._l(_vm.languages, function(l) {
-                    return _c("tec-card", {
-                      key: l.cardId,
-                      attrs: { language: l }
-                    })
-                  })
-                )
-          ])
+          _vm.language != null
+            ? _c("div")
+            : _c("div", { staticClass: "dash-menu" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                !_vm.languages.length
+                  ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
+                  : _c(
+                      "div",
+                      _vm._l(_vm.languages, function(l) {
+                        return _c("tec-card", {
+                          key: l.cardId,
+                          attrs: { language: l }
+                        })
+                      })
+                    )
+              ])
         ])
   ])
 }

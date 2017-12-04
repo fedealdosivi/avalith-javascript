@@ -3,13 +3,24 @@
     	<img :src="language.cardImageUrl" width="80%">
         <div class="container">
         	{{ language.cardDescription}}
+            <button @click="openCard">Details</button>
         </div>
     </div>
 </template>
 <script>
     export default {
         name: 'tecCard',
-        props: ['language']
+        props: ['language'],
+            data() {
+                return{
+                }
+            },
+
+            methods: {
+                openCard(){
+                    this.$emit('getLanguageById',language.cardId);
+                }
+            }
     }
 </script>
 
