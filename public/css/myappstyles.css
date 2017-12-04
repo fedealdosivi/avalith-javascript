@@ -18,6 +18,7 @@ h5{
 }
 
 body{
-	background: grey;
-	margin:0px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }

@@ -13930,7 +13930,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\theight: 13px;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
+exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tmargin-top:  0px;\n\tmargin-left: 0px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tsize: 24px;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\theight: 13px;\n\tmargin-left: 0px;\n}\n.side-input{\n\twidth: 240px;\n\tbackground-color: #020202;\n\tbackground-color: var(--black-two);\n\tborder: solid 5px #ffffff;\n\tmargin-top:268px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 319px;\n\twidth: 63px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n\n", ""]);
 
 // exports
 
@@ -14164,7 +14164,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.container-toggle{\n\tmargin-left: 330px;\n}\n.container{\n\tmargin-left: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.dash-toggle{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 300px;\n\tz-index: 50;\n}\n.container-toggle{\n\tmargin-left: 330px;\n}\n.container{\n\tmargin-left: 0px;\n}\n", ""]);
 
 // exports
 
@@ -14494,10 +14494,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "dash-menu" }, [
+  return _c("div", [
     _vm.isMenuOpen
       ? _c("div", [
-          _c("div", { staticClass: "container-toggle" }, [
+          _c("div", { staticClass: "dash-toggle" }, [
             _c("h3", { staticClass: "dash-title" }, [
               _vm._v("Languages and Technologies")
             ]),
@@ -14516,7 +14516,7 @@ var render = function() {
           ])
         ])
       : _c("div", [
-          _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "dash-menu" }, [
             _vm._m(0),
             _vm._v(" "),
             !_vm.languages.length
