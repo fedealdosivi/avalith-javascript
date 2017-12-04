@@ -1,23 +1,23 @@
 <template>
     <div class="app">
-        <top-menu></top-menu>
+        <top-menu @toggleMenu="toggleMenu"></top-menu>
         <side-bar :isMenuOpen="isMenuOpen"></side-bar>
-        <tec-card></tec-card>
-    	<router-view></router-view>
+        <tecDashboard></tecDashboard>
+        
     </div>
 </template>
 
 <script>
     import topMenu from './top-menu.vue';
     import sideBar from './side-bar.vue';
-    import tecCard from './tec-card.vue';
+    import tecDashboard from './tec-dashboard.vue';
 
     export default {
         name: 'app',
         components: {
             topMenu,
             sideBar,
-            tecCard
+            tecDashboard
         },
         data() {
             return {
@@ -25,13 +25,9 @@
             }
         },
         methods: {
-            toggleMenu(payload) {
-                console.log(payload);
+            toggleMenu() {
                 this.isMenuOpen = !this.isMenuOpen;
             }
         }
     }
 </script>
-
-<style scoped>
-</style>
