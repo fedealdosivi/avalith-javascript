@@ -14428,7 +14428,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 500px;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n}\n.card:hover {\n\t    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n.container {\n\t    padding: 2px 16px;\n}\n\n", ""]);
+exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 28%;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n}\n.card:hover {\n\t    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n.container {\n\t    padding: 2px 16px;\n}\n\n", ""]);
 
 // exports
 

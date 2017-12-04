@@ -93,5 +93,16 @@ const languages=[
 export default{
   getLanguages(){
     return languages; 
+  },
+
+  getCardById(id){
+    const languages = this.getLanguages();
+        let filtro = [];
+        languages.forEach(function(l) {
+            if(l.cardId == id){
+                filtro.push(l);
+            }
+        });
+        return filtro;
   }
 }

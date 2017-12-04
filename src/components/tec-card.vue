@@ -16,7 +16,7 @@
 <style>
     .card {
     	float: left;
-        width: 500px;
+        width: 28%;
         background-color: white;
         padding: 30px;
         margin-bottom: 10px;
