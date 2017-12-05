@@ -2,7 +2,7 @@
     <div class="app">
         <top-menu :toggleMenu="toggleMenu"></top-menu>
         <side-bar :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
-        <tecDashboard :isMenuOpen="isMenuOpen"></tecDashboard>
+        <tecDashboard :updateSideBar="updateSideBar" :isMenuOpen="isMenuOpen"></tecDashboard>
         
     </div>
 </template>
@@ -31,9 +31,7 @@
             },
 
             updateSideBar(payload){
-                console.log(this.isCardOpen);
                 this.isCardOpen=payload;
-                console.log(this.isCardOpen);
             }
         }
     }

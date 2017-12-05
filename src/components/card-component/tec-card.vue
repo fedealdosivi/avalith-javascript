@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-    	<img :src="language.cardImageUrl" @click="openCard" width="80%">
+    	<img :src="language.cardImageUrl" @click="open" width="80%">
         <div class="container">
         	{{ language.cardDescription}}
         </div>
@@ -9,15 +9,15 @@
 <script>
     export default {
         name: 'tecCard',
-        props: ['language'],
+        props: ['language','openCard'],
             data() {
                 return{
                 }
             },
 
             methods: {
-                openCard(){
-                    this.$emit('openCard',this.language);
+                open(){
+                    this.openCard(this.language);
                 }
             }
     }

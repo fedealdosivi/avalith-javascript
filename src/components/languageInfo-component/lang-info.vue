@@ -4,7 +4,7 @@
             <div class="lang-info-toggle">
                 <div class="lang-image">
                     <img :src="lang.cardPost.postImageUrl">
-                    <button @click="closeCard">Back</button>
+                    <button @click="close">Back</button>
                 </div>
                 <div class="lang-text-container">
                     {{lang.cardPost.postDescription}}
@@ -15,7 +15,7 @@
             <div class="lang-info-menu">
                 <div class="lang-image">
                     <img :src="lang.cardPost.postImageUrl">
-                    <button @click="closeCard">Back</button>
+                    <button @click="close">Back</button>
                 </div>
                 <div class="lang-text-container">
                     {{lang.cardPost.postDescription}}
@@ -27,7 +27,7 @@
 <script>
     export default {
         name: 'langInfo',
-        props: ['language','isMenuOpen'],
+        props: ['language','isMenuOpen','closeCard'],
             data() {
                 return{
                     lang:''
@@ -36,16 +36,12 @@
 
             created(){
                 this.lang=this.language;
-                console.log(this.lang);
             },
 
             methods: {
-                openCard(){
-                    this.$emit('openCard',this.language.cardId);
-                },
 
-                closeCard(){
-                    this.$emit('closeCard');
+                close(){
+                    this.closeCard();
                 }
             }
     }
