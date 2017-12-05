@@ -2,12 +2,22 @@
     <div>
         <div v-if="isMenuOpen">
             <div class="lang-info-toggle">
-                <h5>Hola</h5>
+                <div class="lang-image">
+                    <img :src="lang.cardImageUrl" width="100%">
+                </div>
+                <div class="lang-text-container">
+                    {{this.lang.cardDescription}}
+                </div>
             </div>
         </div>
         <div v-else>
             <div class="lang-info-menu">
-                <h5>Chau</h5>
+                <div class="lang-image">
+                    <img :src="lang.cardImageUrl" width="100%">
+                </div>
+                <div class="lang-text-container">
+                    {{this.lang.cardDescription}}
+                </div>
             </div>
         </div>
     </div>
@@ -18,12 +28,21 @@
         props: ['language','isMenuOpen'],
             data() {
                 return{
+                    lang:''
                 }
+            },
+
+            created(){
+                this.lang=this.language;
             },
 
             methods: {
                 openCard(){
                     this.$emit('openCard',this.language.cardId);
+                },
+
+                closeCard(){
+                    this.$emit('closeCard');
                 }
             }
     }
@@ -47,4 +66,22 @@
         margin-left: 300px;
         z-index: 50;
     }
+
+    .lang-image {
+      width: 1066px;
+      height: 388px;
+    }
+
+    .lang-text-container{
+        width: 696px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #000000;
+    }
+
+
 </style>
