@@ -47,4 +47,4 @@
     }
 </script>
 
-<style type="text/css" src="./css/languageInfo.css"></style>
+<style type="text/css" src="./languageInfo.css"></style>

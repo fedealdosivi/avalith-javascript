@@ -23,4 +23,4 @@
     }
 </script>
 
-<style type="text/css" src="./css/tecCard.css"></style>
+<style type="text/css" src="./tecCard.css"></style>

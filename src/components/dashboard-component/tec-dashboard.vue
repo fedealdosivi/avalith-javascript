@@ -70,4 +70,4 @@
 	    }
 </script>
 
-<style type="text/css" src="./css/dashboard-style.css"></style>
+<style type="text/css" src="./dashboard-style.css"></style>

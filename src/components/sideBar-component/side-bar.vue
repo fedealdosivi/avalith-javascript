@@ -43,4 +43,4 @@
 	    }
 </script>
 
-<style type="text/css" src="./css/sideBar.css"></style>
+<style type="text/css" src="./sideBar.css"></style>
