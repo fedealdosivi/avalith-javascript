@@ -73,6 +73,18 @@
 <style>
 	.dash-tittle{
 		background-color: black;
+		margin-left: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		size: 24px;
+		font-family: Roboto;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 0.2px;
+		text-align: left;
+		color: #020202;
+		color: var(--black-two);
 	}
 	.dash-menu{
 		background-color: #afafaf;

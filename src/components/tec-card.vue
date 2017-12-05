@@ -3,7 +3,6 @@
     	<img :src="language.cardImageUrl" @click="openCard" width="80%">
         <div class="container">
         	{{ language.cardDescription}}
-            <button @click="openCard">Details</button>
         </div>
     </div>
 </template>
@@ -27,12 +26,14 @@
 <style>
     .card {
     	float: left;
-        width: 28%;
+        width: 325px;
+        height: 408px;
         background-color: white;
         padding: 30px;
         margin-bottom: 10px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     	transition: 0.3s;
+        margin-left: 30px;
     }
 
 
