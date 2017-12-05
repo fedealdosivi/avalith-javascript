@@ -51,40 +51,4 @@
     }
 </script>
 
-<style>
-    .lang-info-menu{
-        background-color: #ffffff;
-        width: 1366px;
-        height: 768px;
-        margin-top: 60px;
-        margin-left: 0px;
-        z-index: 50;
-    }
-
-    .lang-info-toggle{
-        background-color: #ffffff;
-        width: 1366px;
-        height: 768px;
-        margin-top: 60px;
-        margin-left: 300px;
-        z-index: 50;
-    }
-
-    .lang-image {
-      width: 1066px;
-      height: 388px;
-    }
-
-    .lang-text-container{
-        width: 696px;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 2;
-        letter-spacing: 0.2px;
-        text-align: left;
-        color: #000000;
-    }
-
-
-</style>
+<style type="text/css" src="./css/languageInfo.css"></style>
