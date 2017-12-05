@@ -17,7 +17,18 @@
     }
 
     .lang-image {
-      width: 20%;
+      
+    }
+
+    .img-lang{
+        width: 1066px;
+        height: 388px;
+    }
+
+    .back-class{
+        background-color: white;
+        width: 109px;
+        height: 36px;
     }
 
     .lang-text-container{

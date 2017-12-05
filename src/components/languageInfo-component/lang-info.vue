@@ -3,8 +3,8 @@
         <div v-if="isMenuOpen">
             <div class="lang-info-toggle">
                 <div class="lang-image">
-                    <img :src="lang.cardPost.postImageUrl">
-                    <button @click="close">Back</button>
+                    <img class="img-lang" :src="lang.cardPost.postImageUrl">
+                    <div class="back-class" @click="close">Back</div>
                 </div>
                 <div class="lang-text-container">
                     {{lang.cardPost.postDescription}}
@@ -14,8 +14,8 @@
         <div v-else>
             <div class="lang-info-menu">
                 <div class="lang-image">
-                    <img :src="lang.cardPost.postImageUrl">
-                    <button @click="close">Back</button>
+                    <img class="img-lang" :src="lang.cardPost.postImageUrl">
+                    <div class="back-class" @click="close">Back</div>
                 </div>
                 <div class="lang-text-container">
                     {{lang.cardPost.postDescription}}

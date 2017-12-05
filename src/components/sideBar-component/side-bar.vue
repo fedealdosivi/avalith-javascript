@@ -7,6 +7,7 @@
 				<div margin-top="150" margin-left="89" witdth="132" >{{this.user.years}}</div>
 			</div>
 		</div>
+		<div v-if="!isCardOpen">
 			<input placeholder="Search in Cards" v-model="filter" type="text" class="side-input">
 			<div class="Filter-by">Filter by</div>
 			<br>
@@ -14,6 +15,7 @@
 				<input class="Frontend" v-model="selectedOption" type="radio" name="filter" value="frontend">Frontend<br>
 				<input class="Backend" v-model="selectedOption" type="radio" name="filter" value="backend">Backend<br>
 			</div>
+		</div>
     </div>
 </template>
 
