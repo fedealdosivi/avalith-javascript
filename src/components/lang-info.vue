@@ -1,10 +1,14 @@
 <template>
     <div>
-        <div v-if="isMenuOpen" class="lang-info-menu">
-            <h5>HOLA</h5>
+        <div v-if="isMenuOpen">
+            <div class="lang-info-toggle">
+                <h5>Hola</h5>
+            </div>
         </div>
-        <div v-else class="lang-info-toggle">
-            <h5>Chau</h5>
+        <div v-else>
+            <div class="lang-info-menu">
+                <h5>Chau</h5>
+            </div>
         </div>
     </div>
 </template>
