@@ -53,8 +53,6 @@
 	background-color: black;
 	width: 300px;
 	height: 708px;
-	margin-top:  0px;
-	margin-left: 0px;
 	z-index: 50;
 	position: fixed;
 }
@@ -62,15 +60,11 @@
 .user-data{
 	margin-top: 30px;
 	color: white;
-	size: 24px;
 	letter-spacing: 0.2px;
 	text-align: center;
-	height: 13px;
-	margin-left: 0px;
 } 
 
 .side-input{
-	width: 240px;
 	background-color: white;
 	border: solid 5px #ffffff;
 	margin-top:268px;
@@ -93,13 +87,11 @@
 .Filter-by {
 	margin-left: 31px;
 	margin-top: 319px;
-	width: 63px;
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.33;
 	letter-spacing: 0.2px;
-	text-align: left;
 	color: #f8f8f8;
 }
 
