@@ -7,13 +7,13 @@
 				<div margin-top="150" margin-left="89" witdth="132" >{{this.user.years}}</div>
 			</div>
 		</div>
-		<input placeholder="Search in Cards" v-model="filter" type="text" class="side-input">
-		<div class="Filter-by">Filter by</div>
-		<br>
-		<div class="check-options">
-			<input class="Frontend" v-model="selectedOption" type="radio" name="filter" value="frontend">Frontend<br>
-			<input class="Backend" v-model="selectedOption" type="radio" name="filter" value="backend">Backend<br>
-		</div>
+			<input placeholder="Search in Cards" v-model="filter" type="text" class="side-input">
+			<div class="Filter-by">Filter by</div>
+			<br>
+			<div class="check-options">
+				<input class="Frontend" v-model="selectedOption" type="radio" name="filter" value="frontend">Frontend<br>
+				<input class="Backend" v-model="selectedOption" type="radio" name="filter" value="backend">Backend<br>
+			</div>
     </div>
 </template>
 
@@ -29,8 +29,13 @@
 	        			years: 'XX YEARS OLD'
 	        		},
 	        		selectedOption:'frontend',
-	        		filter:''
+	        		filter:'',
+	        		hideMenu:false
 	        	}
+	        },
+	        created(){
+	        	console.log(this.isCardOpen);
+	        	this.hideMenu=this.isCardOpen;
 	        },
 	        methods: {
 
@@ -67,7 +72,7 @@
 .side-input{
 	background-color: white;
 	border: solid 5px #ffffff;
-	margin-top:268px;
+	margin-top:185px;
 	margin-left:30px;
 	z-index: 50;
 	position: fixed;
@@ -86,7 +91,7 @@
 
 .Filter-by {
 	margin-left: 31px;
-	margin-top: 319px;
+	margin-top: 259px;
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;
