@@ -57,7 +57,7 @@
 	        	},
 
 	        	openCard(payload){
-	        		this.language=lanService.getLanById(payload);
+	        		this.language=(payload);
 	        		this.mutatedCardOpen=true;
 	        		this.$emit('updateSideBar',this.mutatedCardOpen);
 	        	},

@@ -3,22 +3,22 @@
         <div v-if="isMenuOpen">
             <div class="lang-info-toggle">
                 <div class="lang-image">
-                    <img :src="lang.cardImageUrl" width="100%">
+                    <img :src="lang.cardPost.postImageUrl">
                     <button @click="closeCard">Back</button>
                 </div>
                 <div class="lang-text-container">
-                    <h3>{{lang.cardDescription}}</h3>
+                    {{lang.cardPost.postDescription}}
                 </div>
             </div>
         </div>
         <div v-else>
             <div class="lang-info-menu">
                 <div class="lang-image">
-                    <img :src="lang.cardImageUrl" width="100%">
+                    <img :src="lang.cardPost.postImageUrl">
                     <button @click="closeCard">Back</button>
                 </div>
                 <div class="lang-text-container">
-                    <h3>{{lang.cardDescription}}</h3>
+                    {{lang.cardPost.postDescription}}
                 </div>
             </div>
         </div>

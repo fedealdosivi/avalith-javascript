@@ -17,17 +17,15 @@
     }
 
     .lang-image {
-      width: 1066px;
-      height: 388px;
+      width: 20%;
     }
 
     .lang-text-container{
-        width: 696px;
         font-family: Roboto;
         font-size: 18px;
         font-weight: 300;
         line-height: 2;
         letter-spacing: 0.2px;
         text-align: left;
-        color: #000000;
+        color: black;
     }

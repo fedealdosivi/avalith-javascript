@@ -1,7 +1,7 @@
 <template>
 	<nav>
 	    <div class="nav-wrapper">
-	      <div @click="toggleMenu">
+	      <div @click="openMenu">
 	      	<img class="avalith-image" src="avalith.png">
 	      </div>
 	    </div>
@@ -11,13 +11,14 @@
 <script>
     export default {
     	name: 'topMenu',
+        props:['toggleMenu'],
     	data() {
     		return {
     		}
     	},
     	methods: {
-    		toggleMenu() {
-    			this.$emit('toggleMenu');
+    		openMenu() {
+    			this.toggleMenu();
     		}
     	}
     }
