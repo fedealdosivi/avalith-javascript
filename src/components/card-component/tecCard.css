@@ -1,11 +1,10 @@
     .card {
-    	float: left;
         width: 325px;
         background-color: white;
         margin-bottom: 10px;
     	transition: 0.3s;
         margin-left: 20px;
-        align-items: flex-start;
+        align-items: baseline;
     }
 
     .image-card{

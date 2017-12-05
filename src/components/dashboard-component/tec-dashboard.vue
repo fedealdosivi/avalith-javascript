@@ -7,7 +7,7 @@
 		<div v-else class="dash-toggle">
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length">Nothing Here</div>
-			<div v-else>
+			<div class="card-container" v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</div>
 		</div>
@@ -19,7 +19,7 @@
 		<div v-else class="dash-menu">
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
-			<div v-else>
+			<div class="card-container" v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</div>
 		</div>
