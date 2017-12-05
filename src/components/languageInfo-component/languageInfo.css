@@ -17,18 +17,41 @@
     }
 
     .lang-image {
-      
+        width: 1066px;
+        height: 388px;
+        position: fixed;
     }
 
     .img-lang{
         width: 1066px;
-        height: 388px;
+        height: 170px;
+        margin-top:0px;
+        margin-left: 0px;
     }
 
-    .back-class{
-        background-color: white;
+    .container-lang {
+        position: relative;
+        color: white;
+    }
+
+    .centered-lang {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .top-left-lang {
+        position: absolute;
+        top: 45px;
+        left: 0px;
         width: 109px;
         height: 36px;
+        background-color: black;
+        color: white;
+        font-family: Roboto;
+        font-size: 18px;
+        text-align: right;
     }
 
     .lang-text-container{
