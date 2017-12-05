@@ -1,8 +1,8 @@
 <template>
     <div class="app">
         <top-menu :toggleMenu="toggleMenu"></top-menu>
-        <side-bar :updateLanguages="updateLanguages" :languages="languages" :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
-        <tecDashboard :languages="languages" :updateSideBar="updateSideBar" :isMenuOpen="isMenuOpen"></tecDashboard>
+        <side-bar :updateLanguages="updateLanguages" :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
+        <tecDashboard :filter="filter" :checkOption="checkOption" :updateSideBar="updateSideBar" :isMenuOpen="isMenuOpen"></tecDashboard>
         
     </div>
 </template>
@@ -22,24 +22,22 @@
         },
         data() {
             return {
-                languages:[],
                 isMenuOpen: true,
-                isCardOpen: false
+                isCardOpen: false,
+                filter:'',
+                checkOption:''
             }
         },
 
         created(){
-            this.languages=this.getLanguages();
             this.mutatedCardOpen=this.isCardOpen;
         },
 
         methods: {
-            getLanguages(){
-                return lanService.getLanguages();
-            },
 
-            updateLanguages(payload){
-                this.languages=payload;
+            updateLanguages(inputFilter,selectedOption){
+                this.filter=this.inputFilter;
+                this.checkOption=this.selectedOption;
             },
 
             toggleMenu() {

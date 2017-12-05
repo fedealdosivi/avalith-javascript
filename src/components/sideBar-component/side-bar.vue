@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<div v-if="!isCardOpen">
-			<input placeholder="Search in Cards" v-model="filtro" type="text" class="side-input">
+			<input placeholder="Search in Cards" v-on:keyup="languagesFilter" v-model="langFilter" type="text" class="side-input">
 			<div class="Filter-by">Filter by</div>
 			<br>
 			<div class="check-options">
@@ -22,7 +22,7 @@
 <script>
     export default {
     	name: 'sideBar',
-    	props: ['isMenuOpen','isCardOpen','languages','updateLanguages'],
+    	props: ['isMenuOpen','isCardOpen','updateLanguages'],
         data() {
 	        	return{
 	        		user:{
@@ -31,23 +31,16 @@
 	        			years: 'XX YEARS OLD'
 	        		},
 	        		selectedOption:'frontend',
-	        		filtro:'',
-	        		hideMenu:false
+	        		langFilter:''
 	        	}
 	        },
 
-	        computed: {
-		  	languagesFilter() {
-		  		this.updateLanguages(this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filtro.toLowerCase())));
-		  		}
-		  	},
-	        created(){
-	        	console.log(this.isCardOpen);
-	        	this.hideMenu=this.isCardOpen;
-	        },
 	        methods: {
 
-	        }
+		  	languagesFilter() {
+		  		this.updateLanguages(this.langFilter,this.selectedOption);
+	  			}
+	  		}
 	    }
 </script>
 

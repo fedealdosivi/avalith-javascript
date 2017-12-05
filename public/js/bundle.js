@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -262,7 +262,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(13)
+var listToStyles = __webpack_require__(14)
 
 /*
 type StyleObject = {
@@ -3292,7 +3292,118 @@ if (inBrowser && window.Vue) {
 "use strict";
 
 
-var _vue = __webpack_require__(6);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var languages = [{
+    "cardId": 1,
+    "cardTitle": "JavaScript",
+    "cardDescription": "JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games.",
+    "cardTechnology": ["Frontend", "Backend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [40, 10, 50]
+    },
+    "cardPost": {
+        "postTitle": "JavaScript",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA. As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded. Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets. Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme."
+    }
+}, {
+    "cardId": 2,
+    "cardTitle": "CSS",
+    "cardDescription": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.",
+    "cardTechnology": ["Frontend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [20, 15, 65]
+    },
+    "cardPost": {
+        "postTitle": "Cascading Style Sheets (CSS)",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content."
+    }
+}, {
+    "cardId": 3,
+    "cardTitle": "HTML",
+    "cardDescription": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.",
+    "cardTechnology": ["Frontend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [10, 10, 80]
+    },
+    "cardPost": {
+        "postTitle": "Hypertext Markup Language (HTML)",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[3] Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> introduce content into the page directly. Others such as <p>...</p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page. HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997."
+    }
+}, {
+    "cardId": 4,
+    "cardTitle": "Node.js",
+    "cardDescription": "Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side. Historically, JavaScript was used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML, to be run client-side by a JavaScript engine in the user's web browser.",
+    "cardTechnology": ["Backend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [60, 25, 15]
+    },
+    "cardPost": {
+        "postTitle": "Node.js",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side. Historically, JavaScript was used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML, to be run client-side by a JavaScript engine in the user's web browser. Node.js enables JavaScript to be used for server-side scripting, and runs scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js has become one of the foundational elements of the JavaScript everywhere paradigm, allowing web application development to unify around a single programming language, rather than rely on a different language for writing server side scripts. Though .js is the conventional filename extension for JavaScript code, the name Node.Js does not refer to a particular file in this context and is merely the name of the product. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games)."
+    }
+}, {
+    "cardId": 5,
+    "cardTitle": "Python",
+    "cardDescription": "Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.",
+    "cardTechnology": ["Backend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [60, 25, 15]
+    },
+    "cardPost": {
+        "postTitle": "Python",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.[23][24] The language provides constructs intended to enable writing clear programs on both a small and large scale. Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It has a large and comprehensive standard library. Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation."
+    }
+}, {
+    "cardId": 6,
+    "cardTitle": "Angular",
+    "cardDescription": "AngularJS (commonly referred to as Angular.js or AngularJS 1.X) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.",
+    "cardTechnology": ["Frontend"],
+    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
+    "cardGraph": {
+        "data": [60, 25, 15]
+    },
+    "cardPost": {
+        "postTitle": "Angular",
+        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
+        "postDescription": "AngularJS (commonly referred to as Angular.js or AngularJS 1.X) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement Apache Cordova, the framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. In 2014, the original AngularJS team began working on Angular (Application Platform). The AngularJS framework works by first reading the HTML page, which has additional custom tag attributes embedded into it. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources."
+    }
+}];
+exports.default = {
+    getLanguages: function getLanguages() {
+        return languages;
+    },
+    getLanById: function getLanById(id) {
+        var languages = this.getLanguages();
+        var filtro = [];
+        languages.forEach(function (l) {
+            if (l.cardId == id) {
+                filtro.push(l);
+            }
+        });
+        return filtro;
+    }
+};
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _vue = __webpack_require__(7);
 
 var _vue2 = _interopRequireDefault(_vue);
 
@@ -3300,7 +3411,7 @@ var _vueRouter = __webpack_require__(4);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _App = __webpack_require__(8);
+var _App = __webpack_require__(9);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -3321,7 +3432,7 @@ new _vue2.default({
 });
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13517,10 +13628,10 @@ Vue$3.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue$3);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(7)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(8)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 var g;
@@ -13547,14 +13658,14 @@ module.exports = g;
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0380b787_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2baf7f49_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(37);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -13569,12 +13680,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0380b787_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2baf7f49_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/App.vue"
+Component.options.__file = "src/components/app-component/App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -13585,9 +13696,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0380b787", Component.options)
+    hotAPI.createRecord("data-v-2baf7f49", Component.options)
   } else {
-    hotAPI.reload("data-v-0380b787", Component.options)
+    hotAPI.reload("data-v-2baf7f49", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -13598,7 +13709,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13608,19 +13719,33 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _topMenu = __webpack_require__(10);
+var _lanService = __webpack_require__(5);
+
+var _lanService2 = _interopRequireDefault(_lanService);
+
+var _topMenu = __webpack_require__(11);
 
 var _topMenu2 = _interopRequireDefault(_topMenu);
 
-var _sideBar = __webpack_require__(16);
+var _sideBar = __webpack_require__(17);
 
 var _sideBar2 = _interopRequireDefault(_sideBar);
 
-var _tecDashboard = __webpack_require__(21);
+var _tecDashboard = __webpack_require__(22);
 
 var _tecDashboard2 = _interopRequireDefault(_tecDashboard);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     name: 'app',
@@ -13632,42 +13757,43 @@ exports.default = {
     data: function data() {
         return {
             isMenuOpen: true,
-            isCardOpen: false
+            isCardOpen: false,
+            filter: '',
+            checkOption: ''
         };
     },
+    created: function created() {
+        this.mutatedCardOpen = this.isCardOpen;
+    },
+
 
     methods: {
+        updateLanguages: function updateLanguages(inputFilter, selectedOption) {
+            this.filter = this.inputFilter;
+            this.checkOption = this.selectedOption;
+        },
         toggleMenu: function toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
         },
         updateSideBar: function updateSideBar(payload) {
             this.isCardOpen = payload;
-            console.log(this.isCardOpen);
         }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_top_menu_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_top_menu_vue__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_top_menu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_top_menu_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4cf1097e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_top_menu_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_82716906_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_top_menu_vue__ = __webpack_require__(16);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(11)
+  __webpack_require__(12)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -13682,12 +13808,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_top_menu_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4cf1097e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_top_menu_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_82716906_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_top_menu_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/top-menu.vue"
+Component.options.__file = "src/components/nav-component/top-menu.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] top-menu.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -13698,9 +13824,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4cf1097e", Component.options)
+    hotAPI.createRecord("data-v-82716906", Component.options)
   } else {
-    hotAPI.reload("data-v-4cf1097e", Component.options)
+    hotAPI.reload("data-v-82716906", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -13711,23 +13837,23 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("c6a8bd92", content, false);
+var update = __webpack_require__(2)("1e3fc62a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cf1097e\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./top-menu.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cf1097e\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./top-menu.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-82716906\",\"scoped\":false,\"hasInlineConfig\":false}!./topMenu.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-82716906\",\"scoped\":false,\"hasInlineConfig\":false}!./topMenu.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -13737,7 +13863,7 @@ if(false) {
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -13745,13 +13871,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.nav-wrapper{\n\tbackground-color: black;\n\twidth: 1366px;\n\theight: 60px;\n\tz-index: 100;\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n}\n.avalith-image{\n\tmargin-top: 10px;\n\tmargin-left: 30px;\n\twidth: 35px;\n\theight: 39px;\n}\n", ""]);
+exports.push([module.i, "\n.nav-wrapper{\n\t\tbackground-color: black;\n\t\twidth: 1366px;\n\t\theight: 60px;\n\t\tz-index: 100;\n\t\tposition: fixed;\n\t\ttop: 0px;\n\t\tleft: 0px;\n}\n.avalith-image{\n\t\tmargin-top: 10px;\n\t\tmargin-left: 30px;\n\t\twidth: 35px;\n\t\theight: 39px;\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 /**
@@ -13784,7 +13910,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13806,19 +13932,20 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = {
 	name: 'topMenu',
+	props: ['toggleMenu'],
 	data: function data() {
 		return {};
 	},
 
 	methods: {
-		toggleMenu: function toggleMenu() {
-			this.$emit('toggleMenu');
+		openMenu: function openMenu() {
+			this.toggleMenu();
 		}
 	}
 };
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13828,7 +13955,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("nav", [
     _c("div", { staticClass: "nav-wrapper" }, [
-      _c("div", { on: { click: _vm.toggleMenu } }, [
+      _c("div", { on: { click: _vm.openMenu } }, [
         _c("img", {
           staticClass: "avalith-image",
           attrs: { src: "avalith.png" }
@@ -13844,23 +13971,23 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-4cf1097e", esExports)
+     require("vue-hot-reload-api").rerender("data-v-82716906", esExports)
   }
 }
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_side_bar_vue__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_side_bar_vue__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_side_bar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_side_bar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_baad1ff2_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_side_bar_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_dd005dec_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_side_bar_vue__ = __webpack_require__(21);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(17)
+  __webpack_require__(18)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -13875,12 +14002,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_side_bar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_baad1ff2_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_side_bar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_dd005dec_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_side_bar_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/side-bar.vue"
+Component.options.__file = "src/components/sideBar-component/side-bar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] side-bar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -13891,9 +14018,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-baad1ff2", Component.options)
+    hotAPI.createRecord("data-v-dd005dec", Component.options)
   } else {
-    hotAPI.reload("data-v-baad1ff2", Component.options)
+    hotAPI.reload("data-v-dd005dec", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -13904,23 +14031,23 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(18);
+var content = __webpack_require__(19);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7b485523", content, false);
+var update = __webpack_require__(2)("0d16279a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-baad1ff2\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./side-bar.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-baad1ff2\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./side-bar.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dd005dec\",\"scoped\":false,\"hasInlineConfig\":false}!./sideBar.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dd005dec\",\"scoped\":false,\"hasInlineConfig\":false}!./sideBar.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -13930,7 +14057,7 @@ if(false) {
 }
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -13938,13 +14065,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.side-input{\n\tbackground-color: white;\n\tborder: solid 5px #ffffff;\n\tmargin-top:185px;\n\tmargin-left:30px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 259px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n\tmargin-left: 30px;\n}\n\n", ""]);
+exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: fixed;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 708px;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tmargin-top: 30px;\n\tcolor: white;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.side-input{\n\tbackground-color: white;\n\tborder: solid 5px #ffffff;\n\tmargin-top:185px;\n\tmargin-left:30px;\n\tz-index: 50;\n}\n.Search-in-cards {\n\twidth: 123px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\ttext-align: left;\n\tcolor: #f8f8f8;\n}\n.Filter-by {\n\tmargin-left: 31px;\n\tmargin-top: 50px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n\tmargin-left: 30px;\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13972,10 +14099,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
 				name: 'sideBar',
-				props: ['isMenuOpen', 'isCardOpen'],
+				props: ['isMenuOpen', 'isCardOpen', 'updateLanguages'],
 				data: function data() {
 								return {
 												user: {
@@ -13984,20 +14113,20 @@ exports.default = {
 																years: 'XX YEARS OLD'
 												},
 												selectedOption: 'frontend',
-												filter: '',
-												hideMenu: false
+												langFilter: ''
 								};
 				},
-				created: function created() {
-								console.log(this.isCardOpen);
-								this.hideMenu = this.isCardOpen;
-				},
 
-				methods: {}
+
+				methods: {
+								languagesFilter: function languagesFilter() {
+												this.updateLanguages(this.langFilter, this.selectedOption);
+								}
+				}
 };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14047,75 +14176,80 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.filter,
-              expression: "filter"
-            }
-          ],
-          staticClass: "side-input",
-          attrs: { placeholder: "Search in Cards", type: "text" },
-          domProps: { value: _vm.filter },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.filter = $event.target.value
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "Filter-by" }, [_vm._v("Filter by")]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "check-options" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.selectedOption,
-                expression: "selectedOption"
-              }
-            ],
-            staticClass: "Frontend",
-            attrs: { type: "radio", name: "filter", value: "frontend" },
-            domProps: { checked: _vm._q(_vm.selectedOption, "frontend") },
-            on: {
-              __c: function($event) {
-                _vm.selectedOption = "frontend"
-              }
-            }
-          }),
-          _vm._v("Frontend"),
-          _c("br"),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.selectedOption,
-                expression: "selectedOption"
-              }
-            ],
-            staticClass: "Backend",
-            attrs: { type: "radio", name: "filter", value: "backend" },
-            domProps: { checked: _vm._q(_vm.selectedOption, "backend") },
-            on: {
-              __c: function($event) {
-                _vm.selectedOption = "backend"
-              }
-            }
-          }),
-          _vm._v("Backend"),
-          _c("br")
-        ])
+        !_vm.isCardOpen
+          ? _c("div", [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.langFilter,
+                    expression: "langFilter"
+                  }
+                ],
+                staticClass: "side-input",
+                attrs: { placeholder: "Search in Cards", type: "text" },
+                domProps: { value: _vm.langFilter },
+                on: {
+                  keyup: _vm.languagesFilter,
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.langFilter = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "Filter-by" }, [_vm._v("Filter by")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "check-options" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.selectedOption,
+                      expression: "selectedOption"
+                    }
+                  ],
+                  staticClass: "Frontend",
+                  attrs: { type: "radio", name: "filter", value: "frontend" },
+                  domProps: { checked: _vm._q(_vm.selectedOption, "frontend") },
+                  on: {
+                    __c: function($event) {
+                      _vm.selectedOption = "frontend"
+                    }
+                  }
+                }),
+                _vm._v("Frontend"),
+                _c("br"),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.selectedOption,
+                      expression: "selectedOption"
+                    }
+                  ],
+                  staticClass: "Backend",
+                  attrs: { type: "radio", name: "filter", value: "backend" },
+                  domProps: { checked: _vm._q(_vm.selectedOption, "backend") },
+                  on: {
+                    __c: function($event) {
+                      _vm.selectedOption = "backend"
+                    }
+                  }
+                }),
+                _vm._v("Backend"),
+                _c("br")
+              ])
+            ])
+          : _vm._e()
       ])
     : _vm._e()
 }
@@ -14126,23 +14260,23 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-baad1ff2", esExports)
+     require("vue-hot-reload-api").rerender("data-v-dd005dec", esExports)
   }
 }
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_dashboard_vue__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_dashboard_vue__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_dashboard_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_dashboard_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_35e4d69f_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_dashboard_vue__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7c37c158_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_dashboard_vue__ = __webpack_require__(36);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(22)
+  __webpack_require__(23)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -14157,12 +14291,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_dashboard_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_35e4d69f_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_dashboard_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7c37c158_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_dashboard_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/tec-dashboard.vue"
+Component.options.__file = "src/components/dashboard-component/tec-dashboard.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] tec-dashboard.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -14173,9 +14307,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-35e4d69f", Component.options)
+    hotAPI.createRecord("data-v-7c37c158", Component.options)
   } else {
-    hotAPI.reload("data-v-35e4d69f", Component.options)
+    hotAPI.reload("data-v-7c37c158", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14186,23 +14320,23 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(23);
+var content = __webpack_require__(24);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6ccebaa4", content, false);
+var update = __webpack_require__(2)("5346a6a3", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-35e4d69f\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tec-dashboard.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-35e4d69f\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tec-dashboard.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c37c158\",\"scoped\":false,\"hasInlineConfig\":false}!./dashboard-style.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c37c158\",\"scoped\":false,\"hasInlineConfig\":false}!./dashboard-style.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -14212,7 +14346,7 @@ if(false) {
 }
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -14220,13 +14354,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-tittle{\n\tbackground-color: black;\n}\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.dash-toggle{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 300px;\n\tz-index: 50;\n}\n\n", ""]);
+exports.push([module.i, "\n.dash-tittle{\n\t\tbackground-color: black;\n\t\tmargin-left: 30px;\n\t\tmargin-top: 30px;\n\t\tmargin-bottom: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: #020202;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n}\n.dash-toggle{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14236,7 +14370,7 @@ Object.defineProperty(exports, "__esModule", {
 			value: true
 });
 
-var _lanService = __webpack_require__(25);
+var _lanService = __webpack_require__(5);
 
 var _lanService2 = _interopRequireDefault(_lanService);
 
@@ -14252,7 +14386,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
 			name: 'tecDashboard',
-			props: ['isMenuOpen', 'isCardOpen'],
+			props: ['isMenuOpen', 'isCardOpen', 'updateSideBar', 'langFilter', 'checkOption'],
 			components: {
 						tecCard: _tecCard2.default,
 						langInfo: _langInfo2.default
@@ -14264,6 +14398,22 @@ exports.default = {
 									mutatedCardOpen: ''
 						};
 			},
+
+
+			computed: {
+						languagesFilter: function languagesFilter() {
+									var _this = this;
+
+									if (this.filter != '') {
+												return this.languages.filter(function (l) {
+															return l.cardTitle.indexOf(_this.langFilter);
+												});
+									} else {
+												return this.languages;
+									}
+						}
+			},
+
 			created: function created() {
 						this.languages = this.getLanguages();
 						this.mutatedCardOpen = this.isCardOpen;
@@ -14275,13 +14425,13 @@ exports.default = {
 									return _lanService2.default.getLanguages();
 						},
 						openCard: function openCard(payload) {
-									this.language = _lanService2.default.getLanById(payload);
+									this.language = payload;
 									this.mutatedCardOpen = true;
-									this.$emit('updateSideBar', this.mutatedCardOpen);
+									this.updateSideBar(this.mutatedCardOpen);
 						},
 						closeCard: function closeCard() {
 									this.mutatedCardOpen = false;
-									this.$emit('updateSideBar', this.mutatedCardOpen);
+									this.updateSideBar(this.mutatedCardOpen);
 						}
 			}
 }; //
@@ -14315,117 +14465,6 @@ exports.default = {
 //
 
 /***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var languages = [{
-    "cardId": 1,
-    "cardTitle": "JavaScript",
-    "cardDescription": "JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games.",
-    "cardTechnology": ["Frontend", "Backend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [40, 10, 50]
-    },
-    "cardPost": {
-        "postTitle": "JavaScript",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA. As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded. Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets. Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme."
-    }
-}, {
-    "cardId": 2,
-    "cardTitle": "CSS",
-    "cardDescription": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.",
-    "cardTechnology": ["Frontend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [20, 15, 65]
-    },
-    "cardPost": {
-        "postTitle": "Cascading Style Sheets (CSS)",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content."
-    }
-}, {
-    "cardId": 3,
-    "cardTitle": "HTML",
-    "cardDescription": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.",
-    "cardTechnology": ["Frontend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [10, 10, 80]
-    },
-    "cardPost": {
-        "postTitle": "Hypertext Markup Language (HTML)",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[3] Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> introduce content into the page directly. Others such as <p>...</p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page. HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997."
-    }
-}, {
-    "cardId": 4,
-    "cardTitle": "Node.js",
-    "cardDescription": "Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side. Historically, JavaScript was used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML, to be run client-side by a JavaScript engine in the user's web browser.",
-    "cardTechnology": ["Backend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [60, 25, 15]
-    },
-    "cardPost": {
-        "postTitle": "Node.js",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side. Historically, JavaScript was used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML, to be run client-side by a JavaScript engine in the user's web browser. Node.js enables JavaScript to be used for server-side scripting, and runs scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js has become one of the foundational elements of the JavaScript everywhere paradigm, allowing web application development to unify around a single programming language, rather than rely on a different language for writing server side scripts. Though .js is the conventional filename extension for JavaScript code, the name Node.Js does not refer to a particular file in this context and is merely the name of the product. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games)."
-    }
-}, {
-    "cardId": 5,
-    "cardTitle": "Python",
-    "cardDescription": "Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.",
-    "cardTechnology": ["Backend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [60, 25, 15]
-    },
-    "cardPost": {
-        "postTitle": "Python",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.[23][24] The language provides constructs intended to enable writing clear programs on both a small and large scale. Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It has a large and comprehensive standard library. Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation."
-    }
-}, {
-    "cardId": 6,
-    "cardTitle": "Angular",
-    "cardDescription": "AngularJS (commonly referred to as Angular.js or AngularJS 1.X) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.",
-    "cardTechnology": ["Frontend"],
-    "cardImageUrl": "https://dummyimage.com/600x400/000/fff",
-    "cardGraph": {
-        "data": [60, 25, 15]
-    },
-    "cardPost": {
-        "postTitle": "Angular",
-        "postImageUrl": "https://dummyimage.com/1366x768/000/fff",
-        "postDescription": "AngularJS (commonly referred to as Angular.js or AngularJS 1.X) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement Apache Cordova, the framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. In 2014, the original AngularJS team began working on Angular (Application Platform). The AngularJS framework works by first reading the HTML page, which has additional custom tag attributes embedded into it. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources."
-    }
-}];
-exports.default = {
-    getLanguages: function getLanguages() {
-        return languages;
-    },
-    getLanById: function getLanById(id) {
-        var languages = this.getLanguages();
-        var filtro = [];
-        languages.forEach(function (l) {
-            if (l.cardId == id) {
-                filtro.push(l);
-            }
-        });
-        return filtro;
-    }
-};
-
-/***/ }),
 /* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14433,7 +14472,7 @@ exports.default = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_card_vue__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_77463356_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_card_vue__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5f00bec0_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_card_vue__ = __webpack_require__(30);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -14452,12 +14491,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_tec_card_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_77463356_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_card_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5f00bec0_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_tec_card_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/tec-card.vue"
+Component.options.__file = "src/components/card-component/tec-card.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] tec-card.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -14468,9 +14507,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-77463356", Component.options)
+    hotAPI.createRecord("data-v-5f00bec0", Component.options)
   } else {
-    hotAPI.reload("data-v-77463356", Component.options)
+    hotAPI.reload("data-v-5f00bec0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14491,13 +14530,13 @@ var content = __webpack_require__(28);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("aa918696", content, false);
+var update = __webpack_require__(2)("a78ad84e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77463356\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tec-card.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77463356\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tec-card.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f00bec0\",\"scoped\":false,\"hasInlineConfig\":false}!./tecCard.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f00bec0\",\"scoped\":false,\"hasInlineConfig\":false}!./tecCard.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -14515,7 +14554,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 28%;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n}\n.container {\n\t    padding: 2px 16px;\n}\n\n", ""]);
+exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 325px;\n        height: 408px;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n        margin-left: 20px;\n}\n.container {\n\t    padding: 2px 16px;\n}", ""]);
 
 // exports
 
@@ -14538,19 +14577,18 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 exports.default = {
     name: 'tecCard',
-    props: ['language'],
+    props: ['language', 'openCard'],
     data: function data() {
         return {};
     },
 
 
     methods: {
-        openCard: function openCard() {
-            this.$emit('openCard', this.language.cardId);
+        open: function open() {
+            this.openCard(this.language);
         }
     }
 };
@@ -14567,12 +14605,11 @@ var render = function() {
   return _c("div", { staticClass: "card" }, [
     _c("img", {
       attrs: { src: _vm.language.cardImageUrl, width: "80%" },
-      on: { click: _vm.openCard }
+      on: { click: _vm.open }
     }),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
-      _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n        "),
-      _c("button", { on: { click: _vm.openCard } }, [_vm._v("Details")])
+      _vm._v("\n    \t" + _vm._s(_vm.language.cardDescription) + "\n    ")
     ])
   ])
 }
@@ -14583,7 +14620,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-77463356", esExports)
+     require("vue-hot-reload-api").rerender("data-v-5f00bec0", esExports)
   }
 }
 
@@ -14595,7 +14632,7 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_lang_info_vue__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_lang_info_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_lang_info_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1eb66e33_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_lang_info_vue__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e26ae5e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_lang_info_vue__ = __webpack_require__(35);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -14614,12 +14651,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_lang_info_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1eb66e33_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_lang_info_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7e26ae5e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_lang_info_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/lang-info.vue"
+Component.options.__file = "src/components/languageInfo-component/lang-info.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] lang-info.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -14630,9 +14667,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1eb66e33", Component.options)
+    hotAPI.createRecord("data-v-7e26ae5e", Component.options)
   } else {
-    hotAPI.reload("data-v-1eb66e33", Component.options)
+    hotAPI.reload("data-v-7e26ae5e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14653,13 +14690,13 @@ var content = __webpack_require__(33);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("24cb5df3", content, false);
+var update = __webpack_require__(2)("5ede3ec4", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1eb66e33\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./lang-info.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1eb66e33\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./lang-info.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7e26ae5e\",\"scoped\":false,\"hasInlineConfig\":false}!./languageInfo.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7e26ae5e\",\"scoped\":false,\"hasInlineConfig\":false}!./languageInfo.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -14677,7 +14714,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.lang-info-menu{\n    background-color: #ffffff;\n    width: 1366px;\n    height: 768px;\n    margin-top: 60px;\n    margin-left: 0px;\n    z-index: 50;\n}\n.lang-info-toggle{\n    background-color: #ffffff;\n    width: 1366px;\n    height: 768px;\n    margin-top: 60px;\n    margin-left: 300px;\n    z-index: 50;\n}\n.lang-image {\n  width: 1066px;\n  height: 388px;\n}\n.lang-text-container{\n    width: 696px;\n    font-family: Roboto;\n    font-size: 18px;\n    font-weight: 300;\n    line-height: 2;\n    letter-spacing: 0.2px;\n    text-align: left;\n    color: #000000;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.lang-info-menu{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.lang-info-toggle{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 300px;\n        z-index: 50;\n}\n.lang-image {\n        width: 1066px;\n        height: 388px;\n        position: fixed;\n}\n.img-lang{\n        width: 1366px;\n        height: 170px;\n        margin-top:0px;\n        margin-left: 0px;\n}\n.container-lang {\n        position: relative;\n        color: white;\n}\n.centered-lang {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        width: 212px;\n        height: 26px;\n        font-family: Roboto;\n        font-size: 36px;\n        font-weight: bold;\n        line-height: 0.67;\n        letter-spacing: 0.4px;\n        text-align: left;\n        color: #ffffff;\n}\n.top-left-lang {\n        position: absolute;\n        top: 45px;\n        left: 0px;\n        width: 109px;\n        height: 36px;\n        background-color: black;\n        color: white;\n        font-family: Roboto;\n        font-size: 18px;\n        text-align: right;\n}\n.lang-text-container{\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 2;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: black;\n}", ""]);
 
 // exports
 
@@ -14718,10 +14755,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
     name: 'langInfo',
-    props: ['language', 'isMenuOpen'],
+    props: ['language', 'isMenuOpen', 'closeCard'],
     data: function data() {
         return {
             lang: ''
@@ -14729,16 +14768,12 @@ exports.default = {
     },
     created: function created() {
         this.lang = this.language;
-        console.log(this.lang);
     },
 
 
     methods: {
-        openCard: function openCard() {
-            this.$emit('openCard', this.language.cardId);
-        },
-        closeCard: function closeCard() {
-            this.$emit('closeCard');
+        close: function close() {
+            this.closeCard();
         }
     }
 };
@@ -14756,31 +14791,57 @@ var render = function() {
     _vm.isMenuOpen
       ? _c("div", [
           _c("div", { staticClass: "lang-info-toggle" }, [
-            _c("div", { staticClass: "lang-image" }, [
+            _c("div", { staticClass: "container-lang" }, [
               _c("img", {
-                attrs: { src: _vm.lang.cardImageUrl, width: "100%" }
+                staticClass: "img-lang",
+                attrs: { src: _vm.lang.cardPost.postImageUrl }
               }),
               _vm._v(" "),
-              _c("button", { on: { click: _vm.closeCard } }, [_vm._v("Back")])
+              _c(
+                "div",
+                { staticClass: "top-left-lang", on: { click: _vm.close } },
+                [_vm._v("Back")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "centered-lang" }, [
+                _vm._v(_vm._s(_vm.lang.cardPost.postTitle))
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "lang-text-container" }, [
-              _c("h3", [_vm._v(_vm._s(_vm.lang.cardDescription))])
+              _vm._v(
+                "\n                " +
+                  _vm._s(_vm.lang.cardPost.postDescription) +
+                  "\n            "
+              )
             ])
           ])
         ])
       : _c("div", [
           _c("div", { staticClass: "lang-info-menu" }, [
-            _c("div", { staticClass: "lang-image" }, [
+            _c("div", { staticClass: "container-lang" }, [
               _c("img", {
-                attrs: { src: _vm.lang.cardImageUrl, width: "100%" }
+                staticClass: "img-lang",
+                attrs: { src: _vm.lang.cardPost.postImageUrl }
               }),
               _vm._v(" "),
-              _c("button", { on: { click: _vm.closeCard } }, [_vm._v("Back")])
+              _c(
+                "div",
+                { staticClass: "top-left-lang", on: { click: _vm.close } },
+                [_vm._v("Back")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "centered-lang" }, [
+                _vm._v(_vm._s(_vm.lang.cardPost.postTitle))
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "lang-text-container" }, [
-              _c("h3", [_vm._v(_vm._s(_vm.lang.cardDescription))])
+              _vm._v(
+                "\n                " +
+                  _vm._s(_vm.lang.cardPost.postDescription) +
+                  "\n            "
+              )
             ])
           ])
         ])
@@ -14793,7 +14854,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-1eb66e33", esExports)
+     require("vue-hot-reload-api").rerender("data-v-7e26ae5e", esExports)
   }
 }
 
@@ -14816,9 +14877,9 @@ var render = function() {
                   _c("lang-info", {
                     attrs: {
                       language: _vm.language,
-                      isMenuOpen: _vm.isMenuOpen
-                    },
-                    on: { closeCard: _vm.closeCard }
+                      isMenuOpen: _vm.isMenuOpen,
+                      closeCard: _vm.closeCard
+                    }
                   })
                 ],
                 1
@@ -14832,11 +14893,10 @@ var render = function() {
                   ? _c("div", [_vm._v("Nothing Here")])
                   : _c(
                       "div",
-                      _vm._l(_vm.languages, function(l) {
+                      _vm._l(_vm.languagesFilter, function(l) {
                         return _c("tec-card", {
                           key: l.cardId,
-                          attrs: { language: l },
-                          on: { openCard: _vm.openCard }
+                          attrs: { openCard: _vm.openCard, language: l }
                         })
                       })
                     )
@@ -14850,9 +14910,9 @@ var render = function() {
                   _c("lang-info", {
                     attrs: {
                       language: _vm.language,
-                      isMenuOpen: _vm.isMenuOpen
-                    },
-                    on: { closeCard: _vm.closeCard }
+                      isMenuOpen: _vm.isMenuOpen,
+                      closeCard: _vm.closeCard
+                    }
                   })
                 ],
                 1
@@ -14866,11 +14926,10 @@ var render = function() {
                   ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
                   : _c(
                       "div",
-                      _vm._l(_vm.languages, function(l) {
+                      _vm._l(_vm.languagesFilter, function(l) {
                         return _c("tec-card", {
                           key: l.cardId,
-                          attrs: { language: l },
-                          on: { openCard: _vm.openCard }
+                          attrs: { openCard: _vm.openCard, language: l }
                         })
                       })
                     )
@@ -14885,7 +14944,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-35e4d69f", esExports)
+     require("vue-hot-reload-api").rerender("data-v-7c37c158", esExports)
   }
 }
 
@@ -14902,13 +14961,24 @@ var render = function() {
     "div",
     { staticClass: "app" },
     [
-      _c("top-menu", { on: { toggleMenu: _vm.toggleMenu } }),
+      _c("top-menu", { attrs: { toggleMenu: _vm.toggleMenu } }),
       _vm._v(" "),
       _c("side-bar", {
-        attrs: { isMenuOpen: _vm.isMenuOpen, isCardOpen: _vm.isCardOpen }
+        attrs: {
+          updateLanguages: _vm.updateLanguages,
+          isMenuOpen: _vm.isMenuOpen,
+          isCardOpen: _vm.isCardOpen
+        }
       }),
       _vm._v(" "),
-      _c("tecDashboard", { attrs: { isMenuOpen: _vm.isMenuOpen } })
+      _c("tecDashboard", {
+        attrs: {
+          filter: _vm.filter,
+          checkOption: _vm.checkOption,
+          updateSideBar: _vm.updateSideBar,
+          isMenuOpen: _vm.isMenuOpen
+        }
+      })
     ],
     1
   )
@@ -14920,7 +14990,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-0380b787", esExports)
+     require("vue-hot-reload-api").rerender("data-v-2baf7f49", esExports)
   }
 }
 

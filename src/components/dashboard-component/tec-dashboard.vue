@@ -8,7 +8,7 @@
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length">Nothing Here</div>
 			<div v-else>
-				<tec-card v-for="l in languages" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
+				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</div>
 		</div>
 	</div>
@@ -20,7 +20,7 @@
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
 			<div v-else>
-				<tec-card v-for="l in languages" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
+				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</div>
 		</div>
 	</div>
@@ -33,23 +33,40 @@
 	import langInfo from '../languageInfo-component/lang-info.vue';
 	export default {
 	        name: 'tecDashboard',
-    		props: ['isMenuOpen','isCardOpen','updateSideBar','languages'],	        
+    		props: ['isMenuOpen','isCardOpen','updateSideBar','langFilter','checkOption'],	        
 	        components: {
 	            tecCard,
 	            langInfo
 	        },
 	        data() {
 	        	return{
+	        		languages:[],
 	        		language:'',
 	        		mutatedCardOpen:''
 	        	}
 	        },
 
+	        computed:{
+	        	languagesFilter(){
+	        		if(this.filter!=''){
+	        		return this.languages.filter(l => l.cardTitle.indexOf(this.langFilter));
+	        		}
+	        		else{
+	        			return this.languages;
+	        		}
+	        	}
+	        },
+
 	        created(){
+	            this.languages=this.getLanguages();
 	        	this.mutatedCardOpen=this.isCardOpen;
 	        },
 
 	        methods: {
+
+	            getLanguages(){
+                	return lanService.getLanguages();
+            	},
 
 	        	openCard(payload){
 	        		this.language=(payload);
