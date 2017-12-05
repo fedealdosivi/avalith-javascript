@@ -95,7 +95,7 @@ export default{
     return languages; 
   },
 
-  getCardById(id){
+  getLanById(id){
     const languages = this.getLanguages();
         let filtro = [];
         languages.forEach(function(l) {

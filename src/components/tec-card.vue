@@ -18,7 +18,7 @@
 
             methods: {
                 openCard(){
-                    this.$emit('openCard',this.language);
+                    this.$emit('openCard',this.language.cardId);
                 }
             }
     }

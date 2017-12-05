@@ -2,7 +2,7 @@
 <div>
 	<div v-if="isMenuOpen">
 		<div v-if="mutatedCardOpen">
-			
+			<lang-info :language="language" :isMenuOpen="isMenuOpen" @closeCard="closeCard"></lang-info>
 		</div>
 		<div v-else class="dash-toggle">
 			<div class="dash-title">Languages and Technologies</div>
@@ -14,7 +14,7 @@
 	</div>
 	<div v-else>
 		<div v-if="mutatedCardOpen">
-			
+			<lang-info :language="language" :isMenuOpen="isMenuOpen" @closeCard="closeCard"></lang-info>
 		</div>
 		<div v-else class="dash-menu">
 			<div class="dash-title">Languages and Technologies</div>
@@ -30,11 +30,13 @@
 <script>
 	import lanService from '../services/lanService';
 	import tecCard from './tec-card.vue';
+	import langInfo from './lang-info.vue';
 	export default {
 	        name: 'tecDashboard',
     		props: ['isMenuOpen','isCardOpen'],	        
 	        components: {
-	            tecCard
+	            tecCard,
+	            langInfo
 	        },
 	        data() {
 	        	return{
@@ -55,8 +57,13 @@
 	        	},
 
 	        	openCard(payload){
-	        		this.language=payload;
+	        		this.language=lanService.getLanById(payload);
 	        		this.mutatedCardOpen=true;
+	        		this.$emit('updateSideBar');
+	        	},
+
+	        	closeCard(){
+	        		this.mutatedCardOpen=false;
 	        		this.$emit('updateSideBar');
 	        	}
 	        }
@@ -85,11 +92,4 @@
 		z-index: 50;
 	}
 
-	.container-toggle{
-		margin-left: 330px;
-	}
-
-	.container{
-		margin-left: 0px;
-	}
 </style>
