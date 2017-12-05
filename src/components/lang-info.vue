@@ -7,6 +7,7 @@
                 </div>
                 <div class="lang-text-container">
                     {{this.lang.cardDescription}}
+                    <button @click="closeCard">Back</button>
                 </div>
             </div>
         </div>
@@ -17,6 +18,7 @@
                 </div>
                 <div class="lang-text-container">
                     {{this.lang.cardDescription}}
+                    <button @click="closeCard">Back</button>
                 </div>
             </div>
         </div>

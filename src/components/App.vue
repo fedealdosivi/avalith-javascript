@@ -30,8 +30,9 @@
                 this.isMenuOpen = !this.isMenuOpen;
             },
 
-            updateSideBar(){
-                this.isCardOpen=true;
+            updateSideBar(payload){
+                this.isCardOpen=payload;
+                console.log(this.isCardOpen);
             }
         }
     }

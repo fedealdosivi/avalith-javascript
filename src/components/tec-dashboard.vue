@@ -59,12 +59,12 @@
 	        	openCard(payload){
 	        		this.language=lanService.getLanById(payload);
 	        		this.mutatedCardOpen=true;
-	        		this.$emit('updateSideBar');
+	        		this.$emit('updateSideBar',this.mutatedCardOpen);
 	        	},
 
 	        	closeCard(){
 	        		this.mutatedCardOpen=false;
-	        		this.$emit('updateSideBar');
+	        		this.$emit('updateSideBar',this.mutatedCardOpen);
 	        	}
 	        }
 	    }
