@@ -28,9 +28,9 @@
 </template>
 
 <script>
-	import lanService from '../services/lanService';
-	import tecCard from './tec-card.vue';
-	import langInfo from './lang-info.vue';
+	import lanService from '../../services/lanService';
+	import tecCard from '../card-component/tec-card.vue';
+	import langInfo from '../languageInfo-component/lang-info.vue';
 	export default {
 	        name: 'tecDashboard',
     		props: ['isMenuOpen','isCardOpen'],	        

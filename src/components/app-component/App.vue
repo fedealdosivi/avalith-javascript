@@ -8,9 +8,9 @@
 </template>
 
 <script>
-    import topMenu from './top-menu.vue';
-    import sideBar from './side-bar.vue';
-    import tecDashboard from './tec-dashboard.vue';
+    import topMenu from '../nav-component/top-menu.vue';
+    import sideBar from '../sideBar-component/side-bar.vue';
+    import tecDashboard from '../dashboard-component/tec-dashboard.vue';
 
     export default {
         name: 'app',
