@@ -13631,13 +13631,17 @@ exports.default = {
     },
     data: function data() {
         return {
-            isMenuOpen: true
+            isMenuOpen: true,
+            isCardOpen: false
         };
     },
 
     methods: {
         toggleMenu: function toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
+        },
+        updateSideBar: function updateSideBar() {
+            this.isCardOpen = true;
         }
     }
 }; //
@@ -13967,7 +13971,7 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = {
 				name: 'sideBar',
-				props: ['isMenuOpen'],
+				props: ['isMenuOpen', 'isCardOpen'],
 				data: function data() {
 								return {
 												user: {
@@ -14207,7 +14211,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.dash-toggle{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 300px;\n\tz-index: 50;\n}\n.container-toggle{\n\tmargin-left: 330px;\n}\n.container{\n\tmargin-left: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.dash-tittle{\n\tbackground-color: black;\n}\n.dash-menu{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 0px;\n\tz-index: 50;\n}\n.dash-toggle{\n\tbackground-color: #afafaf;\n\twidth: 1366px;\n\theight: 768px;\n\tmargin-top: 60px;\n\tmargin-left: 300px;\n\tz-index: 50;\n}\n.container-toggle{\n\tmargin-left: 330px;\n}\n.container{\n\tmargin-left: 0px;\n}\n", ""]);
 
 // exports
 
@@ -14265,18 +14269,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
 			name: 'tecDashboard',
-			props: ['isMenuOpen'],
+			props: ['isMenuOpen', 'isCardOpen'],
 			components: {
 						tecCard: _tecCard2.default
 			},
 			data: function data() {
 						return {
 									languages: [],
-									language: null
+									language: '',
+									mutatedCardOpen: ''
 						};
 			},
 			created: function created() {
 						this.languages = this.getLanguages();
+						this.mutatedCardOpen = this.isCardOpen;
 			},
 
 
@@ -14284,8 +14290,10 @@ exports.default = {
 						getLanguages: function getLanguages() {
 									return _lanService2.default.getLanguages();
 						},
-						getLanguageById: function getLanguageById(openCardId) {
-									this.language = _lanService2.default.getLanguageById(openCardId);
+						openCard: function openCard(payload) {
+									this.language = payload;
+									this.mutatedCardOpen = true;
+									this.$emit('updateSideBar');
 						}
 			}
 };
@@ -14526,7 +14534,7 @@ exports.default = {
 
     methods: {
         openCard: function openCard() {
-            this.$emit('getLanguageById', language.cardId);
+            this.$emit('openCard', this.language);
         }
     }
 };
@@ -14572,12 +14580,32 @@ var render = function() {
   return _c("div", [
     _vm.isMenuOpen
       ? _c("div", [
-          _vm.language != null
-            ? _c("div", [
-                _vm._v("\n\t\t\t" + _vm._s(_vm.language.cardTittle) + "\n\t\t")
-              ])
+          _vm.mutatedCardOpen
+            ? _c("div")
             : _c("div", { staticClass: "dash-toggle" }, [
-                _c("h3", { staticClass: "dash-title" }, [
+                _c("div", { staticClass: "dash-title" }, [
+                  _vm._v("Languages and Technologies")
+                ]),
+                _vm._v(" "),
+                !_vm.languages.length
+                  ? _c("div", [_vm._v("Nothing Here")])
+                  : _c(
+                      "div",
+                      _vm._l(_vm.languages, function(l) {
+                        return _c("tec-card", {
+                          key: l.cardId,
+                          attrs: { language: l },
+                          on: { openCard: _vm.openCard }
+                        })
+                      })
+                    )
+              ])
+        ])
+      : _c("div", [
+          _vm.mutatedCardOpen
+            ? _c("div")
+            : _c("div", { staticClass: "dash-menu" }, [
+                _c("div", { staticClass: "dash-title" }, [
                   _vm._v("Languages and Technologies")
                 ]),
                 _vm._v(" "),
@@ -14588,26 +14616,8 @@ var render = function() {
                       _vm._l(_vm.languages, function(l) {
                         return _c("tec-card", {
                           key: l.cardId,
-                          attrs: { language: l }
-                        })
-                      })
-                    )
-              ])
-        ])
-      : _c("div", [
-          _vm.language != null
-            ? _c("div")
-            : _c("div", { staticClass: "dash-menu" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                !_vm.languages.length
-                  ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
-                  : _c(
-                      "div",
-                      _vm._l(_vm.languages, function(l) {
-                        return _c("tec-card", {
-                          key: l.cardId,
-                          attrs: { language: l }
+                          attrs: { language: l },
+                          on: { openCard: _vm.openCard }
                         })
                       })
                     )
@@ -14615,16 +14625,7 @@ var render = function() {
         ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "dash-title" }, [
-      _c("h3", [_vm._v("Languages and Technologies")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14650,7 +14651,9 @@ var render = function() {
     [
       _c("top-menu", { on: { toggleMenu: _vm.toggleMenu } }),
       _vm._v(" "),
-      _c("side-bar", { attrs: { isMenuOpen: _vm.isMenuOpen } }),
+      _c("side-bar", {
+        attrs: { isMenuOpen: _vm.isMenuOpen, isCardOpen: _vm.isCardOpen }
+      }),
       _vm._v(" "),
       _c("tecDashboard", { attrs: { isMenuOpen: _vm.isMenuOpen } })
     ],

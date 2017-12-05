@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <top-menu @toggleMenu="toggleMenu"></top-menu>
-        <side-bar :isMenuOpen="isMenuOpen"></side-bar>
+        <side-bar :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
         <tecDashboard :isMenuOpen="isMenuOpen"></tecDashboard>
         
     </div>
@@ -22,11 +22,16 @@
         data() {
             return {
                 isMenuOpen: true,
+                isCardOpen: false
             }
         },
         methods: {
             toggleMenu() {
                 this.isMenuOpen = !this.isMenuOpen;
+            },
+
+            updateSideBar(){
+                this.isCardOpen=true;
             }
         }
     }

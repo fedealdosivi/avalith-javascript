@@ -20,7 +20,7 @@
 <script>
     export default {
     	name: 'sideBar',
-    	props: ['isMenuOpen'],
+    	props: ['isMenuOpen','isCardOpen'],
         data() {
 	        	return{
 	        		user:{
