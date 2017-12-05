@@ -33,28 +33,23 @@
 	import langInfo from '../languageInfo-component/lang-info.vue';
 	export default {
 	        name: 'tecDashboard',
-    		props: ['isMenuOpen','isCardOpen','updateSideBar'],	        
+    		props: ['isMenuOpen','isCardOpen','updateSideBar','languages'],	        
 	        components: {
 	            tecCard,
 	            langInfo
 	        },
 	        data() {
 	        	return{
-	        		languages:[],
 	        		language:'',
 	        		mutatedCardOpen:''
 	        	}
 	        },
 
 	        created(){
-	        	this.languages=this.getLanguages();
 	        	this.mutatedCardOpen=this.isCardOpen;
 	        },
 
 	        methods: {
-	        	getLanguages(){
-	        		return lanService.getLanguages();
-	        	},
 
 	        	openCard(payload){
 	        		this.language=(payload);
