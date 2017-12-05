@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-    	<img :src="language.cardImageUrl" width="80%">
+    	<img :src="language.cardImageUrl" @click="openCard" width="80%">
         <div class="container">
         	{{ language.cardDescription}}
             <button @click="openCard">Details</button>
@@ -35,9 +35,6 @@
     	transition: 0.3s;
     }
 
-	.card:hover {
-	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	}
 
 	.container {
 	    padding: 2px 16px;

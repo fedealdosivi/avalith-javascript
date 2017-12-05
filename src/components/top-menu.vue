@@ -1,9 +1,9 @@
 <template>
 	<nav>
 	    <div class="nav-wrapper">
-	      <a  @click="toggleMenu">
-	      	<img src="avalith.png">
-	      </a>
+	      <div @click="toggleMenu">
+	      	<img class="avalith-image" src="avalith.png">
+	      </div>
 	    </div>
   	</nav>
 </template>
@@ -32,5 +32,12 @@
 		position: fixed;
 		top: 0px;
 		left: 0px;
+	}
+
+	.avalith-image{
+		margin-top: 10px;
+		margin-left: 30px;
+		width: 35px;
+		height: 39px;
 	}
 </style>
