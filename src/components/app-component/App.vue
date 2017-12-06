@@ -36,10 +36,10 @@
         methods: {
 
             updateLanguages(inputFilter,selectedOption){
-                console.log(this.inputFilter)
-                if(this.inputFilter!=''){
-                    this.filter=this.inputFilter;
-                    this.checkOption=this.selectedOption;
+                console.log(inputFilter);
+                if(inputFilter!=''){
+                    this.filter=inputFilter;
+                    this.checkOption=selectedOption;
                 }
             },
 
