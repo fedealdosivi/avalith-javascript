@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <top-menu :toggleMenu="toggleMenu"></top-menu>
-        <side-bar :updateLanguages="updateLanguages" :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
+        <side-bar :filter="filter" :updateLanguages="updateLanguages" :isMenuOpen="isMenuOpen" :isCardOpen="isCardOpen"></side-bar>
         <tecDashboard :filter="filter" :checkOption="checkOption" :updateSideBar="updateSideBar" :isMenuOpen="isMenuOpen"></tecDashboard>
         
     </div>
@@ -27,6 +27,10 @@
                 filter:'',
                 checkOption:''
             }
+        },
+
+        computed:{
+
         },
 
         created(){

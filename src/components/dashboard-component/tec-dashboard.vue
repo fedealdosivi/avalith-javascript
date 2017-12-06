@@ -33,7 +33,7 @@
 	import langInfo from '../languageInfo-component/lang-info.vue';
 	export default {
 	        name: 'tecDashboard',
-    		props: ['isMenuOpen','isCardOpen','updateSideBar','langFilter','checkOption'],	        
+    		props: ['isMenuOpen','isCardOpen','updateSideBar','filter','checkOption'],	        
 	        components: {
 	            tecCard,
 	            langInfo
@@ -48,8 +48,9 @@
 
 	        computed:{
 	        	languagesFilter(){
-	        		if(this.filter!=''){
-	        		return this.languages.filter(l => l.cardTitle.indexOf(this.langFilter));
+	        		console.log(this.filter);
+	        		if(this.filter){
+	        		return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0);
 	        		}
 	        		else{
 	        			return this.languages;

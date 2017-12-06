@@ -13762,6 +13762,10 @@ exports.default = {
             checkOption: ''
         };
     },
+
+
+    computed: {},
+
     created: function created() {
         this.mutatedCardOpen = this.isCardOpen;
     },
@@ -14078,7 +14082,7 @@ exports.push([module.i, "\n.side-user {\n\tbackground-color: #323335;\n\twidth: 
 
 
 Object.defineProperty(exports, "__esModule", {
-				value: true
+	value: true
 });
 //
 //
@@ -14103,26 +14107,29 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
-				name: 'sideBar',
-				props: ['isMenuOpen', 'isCardOpen', 'updateLanguages'],
-				data: function data() {
-								return {
-												user: {
-																name: 'DEV NAME',
-																dni: 'DNI XX.XXX.XXX',
-																years: 'XX YEARS OLD'
-												},
-												selectedOption: 'frontend',
-												langFilter: ''
-								};
-				},
+	name: 'sideBar',
+	props: ['isMenuOpen', 'isCardOpen', 'updateLanguages', 'filter'],
+	data: function data() {
+		return {
+			user: {
+				name: 'DEV NAME',
+				dni: 'DNI XX.XXX.XXX',
+				years: 'XX YEARS OLD'
+			},
+			selectedOption: 'frontend',
+			langFilter: ''
+		};
+	},
+	created: function created() {
+		this.langFilter = this.filter;
+	},
 
 
-				methods: {
-								languagesFilter: function languagesFilter() {
-												this.updateLanguages(this.langFilter, this.selectedOption);
-								}
-				}
+	methods: {
+		languagesFilter: function languagesFilter() {
+			if (this.langFilter != '') this.updateLanguages(this.langFilter, this.selectedOption);
+		}
+	}
 };
 
 /***/ }),
@@ -14191,7 +14198,7 @@ var render = function() {
                 attrs: { placeholder: "Search in Cards", type: "text" },
                 domProps: { value: _vm.langFilter },
                 on: {
-                  keyup: _vm.languagesFilter,
+                  click: _vm.languagesFilter,
                   input: function($event) {
                     if ($event.target.composing) {
                       return
@@ -14354,7 +14361,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-tittle{\n\t\tbackground-color: black;\n\t\tmargin-left: 30px;\n\t\tmargin-top: 30px;\n\t\tmargin-bottom: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: #020202;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n}\n.dash-toggle{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n}", ""]);
+exports.push([module.i, "\n.dash-tittle{\n\t\tbackground-color: black;\n\t\tmargin-left: 30px;\n\t\tmargin-top: 30px;\n\t\tmargin-bottom: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: #020202;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n}\n.dash-toggle{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n}\n.card-container{\n\t\tdisplay: flex;\n\t\tflex-direction: row;\n\t\tflex-wrap: wrap;\n\t\talign-items: center;\n}", ""]);
 
 // exports
 
@@ -14386,7 +14393,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
 			name: 'tecDashboard',
-			props: ['isMenuOpen', 'isCardOpen', 'updateSideBar', 'langFilter', 'checkOption'],
+			props: ['isMenuOpen', 'isCardOpen', 'updateSideBar', 'filter', 'checkOption'],
 			components: {
 						tecCard: _tecCard2.default,
 						langInfo: _langInfo2.default
@@ -14404,9 +14411,10 @@ exports.default = {
 						languagesFilter: function languagesFilter() {
 									var _this = this;
 
-									if (this.filter != '') {
+									console.log(this.filter);
+									if (this.filter) {
 												return this.languages.filter(function (l) {
-															return l.cardTitle.indexOf(_this.langFilter);
+															return l.cardTitle.toLowerCase().indexOf(_this.filter.toLowerCase()) >= 0;
 												});
 									} else {
 												return this.languages;
@@ -14554,7 +14562,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n    \tfloat: left;\n        width: 325px;\n        height: 408px;\n        background-color: white;\n        padding: 30px;\n        margin-bottom: 10px;\n        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n    \ttransition: 0.3s;\n        margin-left: 20px;\n}\n.container {\n\t    padding: 2px 16px;\n}", ""]);
+exports.push([module.i, "\n.card {\n        width: 325px;\n        background-color: white;\n        margin-bottom: 10px;\n    \ttransition: 0.3s;\n        margin-left: 20px;\n        align-items: baseline;\n}\n.image-card{\n        width: 325px;\n        height: 183px;\n        align-content: center;\n}\n.container {\n\t    padding: 2px 16px;\n}", ""]);
 
 // exports
 
@@ -14604,7 +14612,8 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
     _c("img", {
-      attrs: { src: _vm.language.cardImageUrl, width: "80%" },
+      staticClass: "image-card",
+      attrs: { src: _vm.language.cardImageUrl },
       on: { click: _vm.open }
     }),
     _vm._v(" "),
@@ -14893,6 +14902,7 @@ var render = function() {
                   ? _c("div", [_vm._v("Nothing Here")])
                   : _c(
                       "div",
+                      { staticClass: "card-container" },
                       _vm._l(_vm.languagesFilter, function(l) {
                         return _c("tec-card", {
                           key: l.cardId,
@@ -14926,6 +14936,7 @@ var render = function() {
                   ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
                   : _c(
                       "div",
+                      { staticClass: "card-container" },
                       _vm._l(_vm.languagesFilter, function(l) {
                         return _c("tec-card", {
                           key: l.cardId,
@@ -14965,6 +14976,7 @@ var render = function() {
       _vm._v(" "),
       _c("side-bar", {
         attrs: {
+          filter: _vm.filter,
           updateLanguages: _vm.updateLanguages,
           isMenuOpen: _vm.isMenuOpen,
           isCardOpen: _vm.isCardOpen
