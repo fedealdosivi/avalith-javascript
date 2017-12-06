@@ -1,8 +1,8 @@
 <template>
 	<nav>
 	    <div class="nav-wrapper">
-	      <div @click="openMenu">
-	      	<img class="avalith-image" src="avalith.png">
+	      <div>
+	      	<img @click="openMenu" class="avalith-image" src="avalith.png">
 	      </div>
 	    </div>
   	</nav>
