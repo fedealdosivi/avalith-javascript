@@ -22,7 +22,7 @@
 <script>
     export default {
     	name: 'sideBar',
-    	props: ['isMenuOpen','isCardOpen','updateLanguages','filter'],
+    	props: ['isMenuOpen','isCardOpen','updateLanguages'],
         data() {
 	        	return{
 	        		user:{
@@ -31,18 +31,16 @@
 	        			years: 'XX YEARS OLD'
 	        		},
 	        		selectedOption:'frontend',
-	        		langFilter:''
+	        		langFilter:'JavaScript'
 	        	}
-	        },
-
-	        created(){
-	        	this.langFilter=this.filter;
 	        },
 
 	        methods: {
 		  		languagesFilter() {
-		  			if(this.langFilter!='')
-		  			this.updateLanguages(this.langFilter,this.selectedOption);
+		  			if(this.langFilter!=''){
+		  				console.log(this.langFilter);
+		  				this.updateLanguages(this.langFilter,this.selectedOption);
+		  			}
 	  			}
 
 	    	}
