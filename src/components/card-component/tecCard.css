@@ -14,5 +14,16 @@
     }
 
 	.container {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: var(--black);
+        margin-right: 31px;
+        margin-left: 31px;
+        margin-top: 33px;
+        margin-bottom: 33px;
 	    padding: 2px 16px;
 	}

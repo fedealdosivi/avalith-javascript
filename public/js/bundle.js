@@ -47771,7 +47771,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-tittle{\n\t\tbackground-color: black;\n\t\tmargin-left: 30px;\n\t\tmargin-top: 30px;\n\t\tmargin-bottom: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: #020202;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n}\n.dash-toggle{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n}\n.card-container{\n\t\tdisplay: flex;\n\t\tflex-direction: row;\n\t\tflex-wrap: wrap;\n\t\talign-items: center;\n}", ""]);
+exports.push([module.i, "\n.dash-title{\n\t\tmargin-left: 30px;\n\t\tmargin-top: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto , sans-serif;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n}\n.dash-toggle{\n\t\tbackground-color: #afafaf;\n\t\twidth: 1366px;\n\t\theight: 768px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n}\n.card-container{\n\t\tdisplay: flex;\n\t\tflex-direction: row;\n\t\tflex-wrap: wrap;\n\t\talign-items: center;\n}", ""]);
 
 // exports
 
@@ -47980,7 +47980,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n        width: 325px;\n        background-color: white;\n        margin-bottom: 10px;\n    \ttransition: 0.3s;\n        margin-left: 20px;\n        align-items: baseline;\n}\n.image-card{\n        width: 325px;\n        height: 183px;\n        align-content: center;\n}\n.container {\n\t    padding: 2px 16px;\n}", ""]);
+exports.push([module.i, "\n.card {\n        width: 325px;\n        background-color: white;\n        margin-bottom: 10px;\n    \ttransition: 0.3s;\n        margin-left: 20px;\n        align-items: baseline;\n}\n.image-card{\n        width: 325px;\n        height: 183px;\n        align-content: center;\n}\n.container {\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 1.33;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: #313131;\n        color: var(--black);\n        margin-right: 31px;\n        margin-left: 31px;\n        margin-top: 33px;\n        margin-bottom: 33px;\n\t    padding: 2px 16px;\n}", ""]);
 
 // exports
 
@@ -48193,8 +48193,9 @@ exports.default = {
     },
     created: function created() {
         this.lang = this.language;
+        this.dataset.labels = '';
         console.log(this.lang.cardGraph.data);
-        this.dataset.datasets.data = this.lang.cardGraph.data;
+        this.dataset.datasets.data = this.language.cardGraph.data;
         this.myoption.title.text = this.lang.cardPost.postTitle + ' development';
     },
 
