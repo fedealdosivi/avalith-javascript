@@ -42,14 +42,27 @@
 	        	return{
 	        		languages:[],
 	        		language:'',
-	        		mutatedCardOpen:''
+	        		mutatedCardOpen:'',
+	        		tec:'Frontend'
 	        	}
 	        },
 
 	        computed:{
 	        	languagesFilter(){
-	        		if(this.filter!=""){
-	        		return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0);
+	        		const checkOption = this.checkOption;
+	        		if(this.filter!="" && this.checkOption!=""){
+	        		return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0 &&
+	        			l.cardTechnology.includes(checkOption) 
+	        			);
+	        		}
+	        		else if(this.filter!=""){
+	      				return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0);
+	        		}
+	        		else if(checkOption!=""){
+	      				return this.languages.filter(function (l) {
+							  return l.cardTechnology.includes(checkOption);
+							}
+						);
 	        		}
 	        		else{
 	        			return this.languages;

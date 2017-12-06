@@ -12,8 +12,8 @@
 			<div class="Filter-by">Filter by</div>
 			<br>
 			<div class="check-options">
-				<input class="Frontend" v-model="selectedOption" type="radio" name="filter" value="frontend">Frontend<br>
-				<input class="Backend" v-model="selectedOption" type="radio" name="filter" value="backend">Backend<br>
+				<input class="Frontend" v-on:click="languagesFilter" v-model="selectedOption" type="radio" name="filter" value="Frontend">Frontend<br>
+				<input class="Backend" v-on:click="languagesFilter" v-model="selectedOption" type="radio" name="filter" value="Backend">Backend<br>
 			</div>
 		</div>
     </div>
