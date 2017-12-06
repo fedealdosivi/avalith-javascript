@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<div v-if="!isCardOpen">
-			<input placeholder="Search in Cards" v-on:keyup="languagesFilter" v-model="langFilter" type="text" class="side-input">
+			<input placeholder="Search in Cards" v-on:keydown="languagesFilter" v-model="langFilter" type="text" class="side-input">
 			<div class="Filter-by">Filter by</div>
 			<br>
 			<div class="check-options">
@@ -30,17 +30,14 @@
 	        			dni:'DNI XX.XXX.XXX',
 	        			years: 'XX YEARS OLD'
 	        		},
-	        		selectedOption:'frontend',
-	        		langFilter:'JavaScript'
+	        		selectedOption:'',
+	        		langFilter:''
 	        	}
 	        },
 
 	        methods: {
 		  		languagesFilter() {
-		  			if(this.langFilter!=''){
-		  				console.log(this.langFilter);
-		  				this.updateLanguages(this.langFilter,this.selectedOption);
-		  			}
+	  				this.updateLanguages(this.langFilter,this.selectedOption);
 	  			}
 
 	    	}

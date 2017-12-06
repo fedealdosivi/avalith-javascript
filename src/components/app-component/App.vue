@@ -36,11 +36,8 @@
         methods: {
 
             updateLanguages(inputFilter,selectedOption){
-                console.log(inputFilter);
-                if(inputFilter!=''){
-                    this.filter=inputFilter;
-                    this.checkOption=selectedOption;
-                }
+                this.filter=inputFilter;
+                this.checkOption=selectedOption;
             },
 
             toggleMenu() {

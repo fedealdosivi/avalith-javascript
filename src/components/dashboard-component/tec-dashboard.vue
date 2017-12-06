@@ -48,8 +48,7 @@
 
 	        computed:{
 	        	languagesFilter(){
-	        		console.log(this.filter);
-	        		if(this.filter){
+	        		if(this.filter!=""){
 	        		return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0);
 	        		}
 	        		else{
