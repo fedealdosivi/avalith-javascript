@@ -48141,7 +48141,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.lang-info-menu{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.lang-info-toggle{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 300px;\n        z-index: 50;\n}\n.lang-image {\n        width: 1066px;\n        height: 388px;\n        position: fixed;\n}\n.img-lang{\n        width: 1366px;\n        height: 170px;\n        margin-top:0px;\n        margin-left: 0px;\n}\n.container-lang {\n        position: relative;\n        color: white;\n}\n.centered-lang {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        width: 212px;\n        height: 26px;\n        font-family: Roboto;\n        font-size: 36px;\n        font-weight: bold;\n        line-height: 0.67;\n        letter-spacing: 0.4px;\n        text-align: left;\n        color: #ffffff;\n}\n.top-left-lang {\n        position: absolute;\n        top: 45px;\n        left: 0px;\n        width: 109px;\n        height: 36px;\n        background-color: black;\n        color: white;\n        font-family: Roboto;\n        font-size: 18px;\n        text-align: right;\n}\n.top-left-lang-text{\n}\n.lang-container{\n        position: relative;\n        color: white;\n}\n.lang-text-container{\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 2;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: black;\n        margin-top:50px; \n        margin-left:50px;\n        margin-right: 50px;\n        margin-bottom: 50px;\n}\n.chart{\n        width: 250px;\n        height: 250px;\n}\n.lang-chart-container{\n}", ""]);
+exports.push([module.i, "\n.lang-info-menu{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.lang-info-toggle{\n        background-color: #ffffff;\n        width: 1366px;\n        height: 768px;\n        margin-top: 60px;\n        margin-left: 300px;\n        z-index: 50;\n}\n.lang-image {\n        width: 1066px;\n        height: 388px;\n        position: fixed;\n}\n.img-lang{\n        width: 1366px;\n        height: 170px;\n        margin-top:0px;\n        margin-left: 0px;\n}\n.container-lang {\n        position: relative;\n        color: white;\n}\n.centered-lang {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        width: 212px;\n        height: 26px;\n        font-family: Roboto;\n        font-size: 36px;\n        font-weight: bold;\n        line-height: 0.67;\n        letter-spacing: 0.4px;\n        text-align: left;\n        color: #ffffff;\n}\n.top-left-lang {\n        position: absolute;\n        top: 45px;\n        left: 0px;\n        width: 109px;\n        height: 36px;\n        background-color: black;\n        color: white;\n        font-family: Roboto;\n        font-size: 18px;\n        text-align: right;\n}\n.top-left-lang-text{\n}\n.lang-container{\n        display: flex;\n        flex-direction: row;\n        color: white;\n}\n.lang-text-container{\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 2;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: black;\n        margin-top:50px; \n        margin-left:50px;\n        margin-right: 50px;\n        margin-bottom: 50px;\n}\n.chart{\n        margin-top: 50px;\n        margin-right: 50px;\n        width: 250px;\n        height: 250px;\n}\n.lang-chart-container{\n}", ""]);
 
 // exports
 
@@ -48185,15 +48185,14 @@ exports.default = {
             dataset: {
                 labels: '',
                 datasets: [{
-                    backgroundColor: ['#41B883', '#E46651', '#00D8FF'],
-                    data: [20, 15, 65]
+                    backgroundColor: ['#e4517f', '#5193e4', '#f4dc42'],
+                    data: [65, 15, 20]
                 }]
             }
         };
     },
     created: function created() {
         this.lang = this.language;
-        this.dataset.labels = '';
         console.log(this.lang.cardGraph.data);
         this.dataset.datasets.data = this.lang.cardGraph.data;
         this.myoption.title.text = this.lang.cardPost.postTitle + ' development';

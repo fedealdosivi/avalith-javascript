@@ -64,11 +64,11 @@ import chartDoug from '../chart-component/chart-doug.vue';
                       datasets: [
                         {
                           backgroundColor: [
-                            '#41B883',
-                            '#E46651',
-                            '#00D8FF'
+                            '#e4517f',
+                            '#5193e4',
+                            '#f4dc42'
                           ],
-                          data:[20,15,65]
+                          data:[65,15,20]
                         }
                       ]
                     }
@@ -79,7 +79,7 @@ import chartDoug from '../chart-component/chart-doug.vue';
                 this.lang=this.language;
                 this.dataset.labels='';
                 console.log(this.lang.cardGraph.data);
-                this.dataset.datasets.data=this.lang.cardGraph.data;
+                this.dataset.datasets.data=this.language.cardGraph.data;
                 this.myoption.title.text=this.lang.cardPost.postTitle + ' development';
 
             },

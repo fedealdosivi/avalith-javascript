@@ -69,7 +69,8 @@
     }
 
     .lang-container{
-        position: relative;
+        display: flex;
+        flex-direction: row;
         color: white;   
     }
 
@@ -88,6 +89,8 @@
     }
 
     .chart{
+        margin-top: 50px;
+        margin-right: 50px;
         width: 250px;
         height: 250px;
     }
