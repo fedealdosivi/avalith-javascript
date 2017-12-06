@@ -42,14 +42,13 @@
 	        	return{
 	        		languages:[],
 	        		language:'',
-	        		mutatedCardOpen:'',
-	        		tec:'Frontend'
+	        		mutatedCardOpen:''
 	        	}
 	        },
 
 	        computed:{
 	        	languagesFilter(){
-	        		const checkOption = this.checkOption;
+	        		let checkOption = this.checkOption;
 	        		if(this.filter!="" && this.checkOption!=""){
 	        		return this.languages.filter(l => l.cardTitle.toLowerCase().indexOf(this.filter.toLowerCase())>=0 &&
 	        			l.cardTechnology.includes(checkOption) 
