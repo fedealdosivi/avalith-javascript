@@ -4,11 +4,18 @@
             <div class="lang-info-toggle">
                 <div class="container-lang">
                     <img class="img-lang" :src="lang.cardPost.postImageUrl">
-                    <div class="top-left-lang" @click="close">Back</div>
+                    <div class="top-left-lang" @click="close">
+                        <div class="top-left-lang-text">Go Back</div>
+                    </div>
                     <div class="centered-lang">{{lang.cardPost.postTitle}}</div>
                 </div>
-                <div class="lang-text-container">
-                    {{lang.cardPost.postDescription}}
+                <div class="lang-container">
+                    <div class="lang-text-container">
+                        {{lang.cardPost.postDescription}}
+                    </div>
+                    <div class="chart">
+                        <chart-doug :cardData="dataset" :options="myoption"></chart-doug>
+                    </div>
                 </div>
             </div>
         </div>
@@ -16,28 +23,65 @@
             <div class="lang-info-menu">
                 <div class="container-lang">
                     <img class="img-lang" :src="lang.cardPost.postImageUrl">
-                    <div class="top-left-lang" @click="close">Back</div>
+                    <div class="top-left-lang" @click="close">Go Back</div>
                     <div class="centered-lang">{{lang.cardPost.postTitle}}</div>
                 </div>
-                <div class="lang-text-container">
-                    {{lang.cardPost.postDescription}}
+                <div class="lang-container">
+                    <div class="lang-text-container">
+                        {{lang.cardPost.postDescription}}
+                    </div>
+                    <div class="chart">
+                        <chart-doug :cardData="dataset" :options="myoption"></chart-doug>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import chartDoug from '../chart-component/chart-doug.vue';
     export default {
         name: 'langInfo',
         props: ['language','isMenuOpen','closeCard'],
+            components: {
+                chartDoug
+            },
             data() {
                 return{
-                    lang:''
+                    lang:'',
+                    myoption:{
+                        responsive:true,
+                        maintainAspectRatio:true,
+                        title: {
+                            display: true,
+                            position: 'top',
+                            text: ''
+                        }
+                    },
+
+                    dataset:{
+                      labels: '',
+                      datasets: [
+                        {
+                          backgroundColor: [
+                            '#41B883',
+                            '#E46651',
+                            '#00D8FF'
+                          ],
+                          data:[20,15,65]
+                        }
+                      ]
+                    }
                 }
             },
 
             created(){
                 this.lang=this.language;
+                this.dataset.labels='';
+                console.log(this.lang.cardGraph.data);
+                this.dataset.datasets.data=this.lang.cardGraph.data;
+                this.myoption.title.text=this.lang.cardPost.postTitle + ' development';
+
             },
 
             methods: {
