@@ -14,3 +14,15 @@
 		width: 35px;
 		height: 39px;
 	}
+
+	@media screen and (max-width: 650px) {
+	.nav-wrapper{
+		background-color: black;
+		width: 650px;
+		height: 60px;
+		z-index: 100;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		}	
+	}
