@@ -1,7 +1,6 @@
     .lang-info-menu{
         background-color: #ffffff;
         width: 1366px;
-        height: 768px;
         margin-top: 60px;
         margin-left: 0px;
         z-index: 50;
@@ -10,7 +9,6 @@
     .lang-info-toggle{
         background-color: #ffffff;
         width: 1366px;
-        height: 768px;
         margin-top: 60px;
         margin-left: 300px;
         z-index: 50;
@@ -98,3 +96,30 @@
     .lang-chart-container{
 
     }
+
+    @media screen and (max-width: 650px) {
+    .lang-info-menu{
+        background-color: #ffffff;
+        width: 650px;
+        margin-top: 60px;
+        margin-left: 0px;
+        z-index: 50;
+    }
+
+    .lang-info-toggle{
+        background-color: #ffffff;
+        width: 650px;
+        margin-top: 160px;
+        margin-left: 0px;
+        z-index: 50;
+    }
+
+
+    .img-lang{
+        width: 650px;
+        height: 170px;
+        margin-top:0px;
+        margin-left: 0px;
+    }
+
+    }        
