@@ -19,16 +19,6 @@
 		z-index: 50;
 	}
 
-	@media screen and (max-width: 650px) {
-	.dash-menu{
-		background-color: #afafaf;
-		width: 650px;
-		margin-top: 60px;
-		margin-left: 0px;
-		z-index: 50;
-		}
-	}
-
 	.dash-toggle{
 		background-color: #afafaf;
 		width: 1366px;
@@ -36,16 +26,6 @@
 		margin-top: 60px;
 		margin-left: 300px;
 		z-index: 50;
-	}
-
-	@media screen and (max-width: 650px) {
-	.dash-toggle{
-		background-color: #afafaf;
-		width: 650px;
-		margin-top: 60px;
-		margin-left: 300px;
-		z-index: 50;
-	}
 	}
 
 	.card-container{
@@ -61,5 +41,34 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
-	}	
-}
+	}
+
+	.dash-toggle{
+		background-color: #afafaf;
+		width: 650px;
+		margin-top: 60px;
+		margin-left: 300px;
+		z-index: 50;
+	}
+
+	.dash-menu{
+		background-color: #afafaf;
+		width: 650px;
+		margin-top: 60px;
+		margin-left: 0px;
+		z-index: 50;
+	}
+
+	.dash-title{
+		margin-left: 180px;
+		margin-top: 30px;
+		size: 24px;
+		font-family: Roboto , sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: 0.2px;
+		text-align: left;
+		color: var(--black-two);
+		}
+	}
