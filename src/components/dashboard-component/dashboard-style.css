@@ -1,4 +1,4 @@
-.dash-title{
+	.dash-title{
 		margin-left: 30px;
 		margin-top: 30px;
 		size: 24px;
@@ -19,6 +19,16 @@
 		z-index: 50;
 	}
 
+	@media screen and (max-width: 650px) {
+	.dash-menu{
+		background-color: #afafaf;
+		width: 650px;
+		margin-top: 60px;
+		margin-left: 0px;
+		z-index: 50;
+		}
+	}
+
 	.dash-toggle{
 		background-color: #afafaf;
 		width: 1366px;
@@ -27,9 +37,29 @@
 		margin-left: 300px;
 		z-index: 50;
 	}
+
+	@media screen and (max-width: 650px) {
+	.dash-toggle{
+		background-color: #afafaf;
+		width: 650px;
+		margin-top: 60px;
+		margin-left: 300px;
+		z-index: 50;
+	}
+	}
+
 	.card-container{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
 	}
+
+	@media screen and (max-width: 650px) {
+	.card-container{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}	
+}
