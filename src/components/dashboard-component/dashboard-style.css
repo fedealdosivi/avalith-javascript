@@ -13,7 +13,6 @@
 	.dash-menu{
 		background-color: #afafaf;
 		width: 1366px;
-		height: 768px;
 		margin-top: 60px;
 		margin-left: 0px;
 		z-index: 50;
@@ -22,7 +21,6 @@
 	.dash-toggle{
 		background-color: #afafaf;
 		width: 1366px;
-		height: 768px;
 		margin-top: 60px;
 		margin-left: 300px;
 		z-index: 50;
