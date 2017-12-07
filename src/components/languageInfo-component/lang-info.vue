@@ -78,8 +78,7 @@ import chartDoug from '../chart-component/chart-doug.vue';
             created(){
                 this.lang=this.language;
                 this.dataset.labels='';
-                console.log(this.lang.cardGraph.data);
-                this.dataset.datasets.data=this.language.cardGraph.data;
+                this.dataset.datasets[0].data=this.lang.cardGraph.data;
                 this.myoption.title.text=this.lang.cardPost.postTitle + ' development';
 
             },
