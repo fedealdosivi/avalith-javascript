@@ -2,9 +2,9 @@
     <div v-if="isMenuOpen" class="side-menu">
 		<div class="side-user">
 			<div class="user-data">
-				<div margin-top="91" margin-left="93" witdth="132" >{{this.user.name}}</div>
-				<div margin-top="122" margin-left="85" witdth="132" >{{this.user.dni}}</div>
-				<div margin-top="150" margin-left="89" witdth="132" >{{this.user.years}}</div>
+				<div class="dev-name" >{{this.user.name}}</div>
+				<div class="dev-info">{{this.user.dni}}</div>
+				<div class="dev-info">{{this.user.years}}</div>
 			</div>
 		</div>
 		<div v-if="!isCardOpen">
