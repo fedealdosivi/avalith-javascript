@@ -1,7 +1,7 @@
     .card {
         width: 325px;
         background-color: white;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     	transition: 0.3s;
         margin-left: 20px;
         align-items: baseline;
@@ -26,3 +26,33 @@
         margin-bottom: 33px;
 	    padding: 2px 16px;
 	}
+@media screen and (max-width: 650px) {
+
+     .card {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        align-items: baseline;
+    }
+
+    .image-card{
+        width: 100%;
+        align-content: center;
+    }
+
+    .container {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: var(--black);
+        margin-right: 31px;
+        margin-left: 31px;
+        margin-top: 33px;
+        margin-bottom: 33px;
+        padding: 2px 16px;
+    }   
+}

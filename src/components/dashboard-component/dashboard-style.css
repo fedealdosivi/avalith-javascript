@@ -11,14 +11,14 @@
 		color: var(--black-two);
 	}
 	.dash-menu{
-		width: 1366px;
+		width: 100%;
 		margin-top: 60px;
 		margin-left: 0px;
 		z-index: 50;
 	}
 
 	.dash-toggle{
-		width: 1366px;
+		width: 100%;		
 		margin-top: 60px;
 		margin-left: 300px;
 		z-index: 50;
@@ -40,7 +40,7 @@
 	}
 
 	.dash-toggle{
-		width: 650px;
+		width: 100%;
 		margin-top: 160px;
 		z-index: 50;
 		margin-left: 0px;
@@ -49,7 +49,7 @@
 	}
 
 	.dash-menu{
-		width: 650px;
+		width: 100%;
 		margin-top: 60px;
 		z-index: 50;
 	}
