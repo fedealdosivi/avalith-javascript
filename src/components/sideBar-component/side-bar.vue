@@ -9,11 +9,16 @@
 		</div>
 		<div v-if="!isCardOpen">
 			<input placeholder="Search in Cards" v-on:keydown="languagesFilter" v-model="langFilter" type="text" class="side-input">
-			<div class="Filter-by">Filter by</div>
-			<br>
 			<div class="check-options">
-				<input class="Frontend" v-on:click="languagesFilter" v-model="selectedOption" type="radio" name="filter" value="Frontend">Frontend<br>
-				<input class="Backend" v-on:click="languagesFilter" v-model="selectedOption" type="radio" name="filter" value="Backend">Backend<br>
+				Filter By
+				<label class="radio-container">Frontend
+					<input type="radio" v-on:click="languagesFilter" v-model="selectedOption" name="filter" value="Frontend" >
+					<span class="checkmark"></span>
+				</label>
+				<label class="radio-container">Backend
+					<input v-on:click="languagesFilter" v-model="selectedOption" type="radio" name="filter" value="Backend">
+					<span class="checkmark"></span>
+				</label>
 			</div>
 		</div>
     </div>
