@@ -110,7 +110,8 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: black;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
@@ -120,7 +121,7 @@
     display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.radio-container input:checked ~ .checkmark:after {
     display: block;
 }
 
