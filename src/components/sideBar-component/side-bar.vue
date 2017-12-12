@@ -8,7 +8,9 @@
 			</div>
 		</div>
 		<div v-if="!isCardOpen">
-			<input placeholder="Search in Cards" v-on:keydown="languagesFilter" v-model="langFilter" type="text" class="side-input">
+			<div class="side-input">
+					<input placeholder="Search in Cards" class="input-search" type="text" v-on:keydown="languagesFilter" v-model="langFilter">
+			</div>
 			<div class="check-options">
 				Filter By
 				<label class="radio-container">Frontend
