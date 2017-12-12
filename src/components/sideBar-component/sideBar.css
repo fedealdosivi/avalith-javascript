@@ -57,6 +57,7 @@
 	top:-20px;
 	font-size:18px;
 	color: white;
+	width: 240px
 }
 .input-search::-webkit-input-placeholder {
 color: white !important;
@@ -178,32 +179,26 @@ color: white !important;
 }
 
 .side-input{
-	background-color: white;
-	border: solid 5px #ffffff;
 	margin-top:30px;
-	margin-left:155px;
-	z-index: 50;
+	margin-left:150px;
 }
 
-input {
+.input-search 		{
+	background:transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	top:-20px;
 	font-size:18px;
-	display:block;
-	width:200px;
-	border:none;
-	border-bottom:1px solid #757575;
+	color: white;
+	width: 150px;
+}
+.input-search::-webkit-input-placeholder {
+color: white !important;
 }
 
-.Filter-by {
-	margin-left: 400px;
-	margin-top: -40px;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 1.33;
-	letter-spacing: 0.2px;
-	color: #f8f8f8;
+.input-search:-ms-input-placeholder {  
+color: white !important;  
 }
-
 .check-options{
 	font-family: Roboto;
 	font-size: 18px;
@@ -211,12 +206,13 @@ input {
 	line-height: 1.33;
 	letter-spacing: 0.2px;
 	color: #f8f8f8;
-	margin-top: -40px;
-	margin-left: 380px;
+	margin-top: -25px;
+	margin-left: 320px;
 	display: flex;
 }
 .radio-container {
-	margin-top: 19px;
+	margin-top: 1px;
+	margin-left: 15px;
     display: block;
     position: relative;
     cursor: pointer;
