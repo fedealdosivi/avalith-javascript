@@ -5,7 +5,7 @@
 			<lang-info :language="language" :isMenuOpen="isMenuOpen" :closeCard="closeCard"></lang-info>
 		</div>
 		<div v-else class="dash-toggle">
-			<div class="dash-title">Languages and Technologies</div>
+			<h1 class="dash-title">Languages and Technologies</h1>
 			<div v-if="!languages.length">Nothing Here</div>
 			<div class="card-container" v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
