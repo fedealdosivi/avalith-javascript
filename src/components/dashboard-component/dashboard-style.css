@@ -14,6 +14,7 @@
 		margin-top: 60px;
 		margin-left: 0px;
 		z-index: 50;
+		background-color: #E6E6E6;
 	}
 
 	.dash-toggle{
@@ -21,6 +22,7 @@
 		margin-top: 60px;
 		margin-left: 300px;
 		z-index: 50;
+		background-color: #E6E6E6;
 	}
 
 	.card-container{
@@ -28,6 +30,11 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
+	}
+
+	.card-columns{
+		display: inline-block; 
+		column-break-inside: avoid;
 	}
 
 	@media screen and (max-width: 650px) {
@@ -45,6 +52,7 @@
 		margin-left: 0px;
 		height: 0px;
 		padding-top: 5%;
+		background-color: #E6E6E6;
 	}
 
 	.dash-menu{
@@ -52,6 +60,7 @@
 		margin-top: 60px;
 		margin-left: 0px;
 		z-index: 50;
+		background-color: #E6E6E6;
 	}
 
 	.dash-title{

@@ -1,10 +1,12 @@
 <template>
-    <div class="card">
-    	<img class="image-card" :src="language.cardImageUrl" @click="open">
-        <div class="container">
-        	{{ language.cardDescription}}
-        </div>
-    </div>
+    <b-card :img-src="language.cardImageUrl"
+                img-fluid
+                img-alt="image"
+                img-top @click="open">
+            <p class="card-text">
+                {{language.cardDescription}}
+            </p>
+    </b-card>
 </template>
 <script>
     export default {

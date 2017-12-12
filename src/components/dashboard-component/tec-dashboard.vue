@@ -19,9 +19,9 @@
 		<div v-else class="dash-menu">
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
-			<div class="card-container" v-else>
+			<b-card-group display: inline-block column-break-inside: avoid v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
-			</div>
+			</b-card-group>
 		</div>
 	</div>
 </div>
