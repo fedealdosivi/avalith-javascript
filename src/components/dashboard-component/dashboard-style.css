@@ -1,5 +1,7 @@
 	.dash-title{
+		margin-left: 18px;
 		padding: 30px;
+		margin-bottom: 30px;
 		size: 24px;
 		font-family: Roboto , sans-serif;
 		font-size: 24px;
@@ -13,7 +15,6 @@
 		width: 100%;
 		margin-top: 60px;
 		margin-left: 0px;
-		z-index: 50;
 		background-color: #E6E6E6;
 	}
 
@@ -21,7 +22,6 @@
 		width: 100%;		
 		margin-top: 60px;
 		margin-left: 300px;
-		z-index: 50;
 		background-color: #E6E6E6;
 	}
 
@@ -30,6 +30,8 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
+		margin-left: 31px;
+		margin-top: -31px;
 	}
 
 	.card-columns{
@@ -39,6 +41,8 @@
 
 	@media screen and (max-width: 650px) {
 	.card-container{
+		margin: 0px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
