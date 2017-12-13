@@ -53772,7 +53772,7 @@ module.exports = {
 /* 242 */
 /***/ (function(module, exports) {
 
-module.exports = {"_from":"vue-chartjs","_id":"vue-chartjs@3.0.2","_inBundle":false,"_integrity":"sha512-m6ItjL8o3ff4JpbF083RzZ4KPiNBFsqMKmWCcAtlisOdm1vvB/9mUDJePmxYKJkvl2AcpvLPiH1cUrhq46r8vA==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"vue-chartjs","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"","saveSpec":null,"fetchSpec":"latest"},"_requiredBy":["#USER","/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.0.2.tgz","_shasum":"960d0ba9c2f3720b85ff02417707adc02f953de9","_spec":"vue-chartjs","_where":"/home/fede/Desktop/bbbb/avalith-javascript","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"bundleDependencies":false,"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{"lodash.merge":"^4.6.0"},"deprecated":false,"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^3.2.4","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","nightwatch":"^0.9.14","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.0.2"}
+module.exports = {"_args":[["vue-chartjs@3.0.2","C:\\Users\\Federico\\Desktop\\avalith-javascript"]],"_from":"vue-chartjs@3.0.2","_id":"vue-chartjs@3.0.2","_inBundle":false,"_integrity":"sha512-m6ItjL8o3ff4JpbF083RzZ4KPiNBFsqMKmWCcAtlisOdm1vvB/9mUDJePmxYKJkvl2AcpvLPiH1cUrhq46r8vA==","_location":"/vue-chartjs","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"vue-chartjs@3.0.2","name":"vue-chartjs","escapedName":"vue-chartjs","rawSpec":"3.0.2","saveSpec":null,"fetchSpec":"3.0.2"},"_requiredBy":["/"],"_resolved":"https://registry.npmjs.org/vue-chartjs/-/vue-chartjs-3.0.2.tgz","_spec":"3.0.2","_where":"C:\\Users\\Federico\\Desktop\\avalith-javascript","author":{"name":"Jakub Juszczak","email":"jakub@posteo.de"},"browserify":{"transform":["babelify"]},"bugs":{"url":"https://github.com/apertureless/vue-chartjs/issues"},"contributors":[{"name":"Thorsten Lünborg","url":"https://github.com/LinusBorg"},{"name":"Juan Carlos Alonso","url":"https://github.com/jcalonso"}],"dependencies":{"lodash.merge":"^4.6.0"},"description":"Vue.js wrapper for chart.js for creating beautiful charts.","devDependencies":{"@babel/cli":"^7.0.0-beta.31","@babel/core":"^7.0.0-beta.31","@babel/preset-env":"^7.0.0-beta.31","@babel/preset-stage-2":"^7.0.0-beta.31","babel-loader":"8.0.0-beta.0","chai":"^3.5.0","chart.js":"2.7.0","chromedriver":"^2.28.0","connect-history-api-fallback":"^1.1.0","cross-env":"^3.2.4","cross-spawn":"^5.1.0","css-loader":"^0.28.0","eslint":"^3.19.0","eslint-config-standard":"^10.2.1","eslint-friendly-formatter":"^2.0.7","eslint-loader":"^1.7.1","eslint-plugin-html":"^2.0.1","eslint-plugin-import":"^2.2.0","eslint-plugin-node":"^4.2.2","eslint-plugin-promise":"^3.5.0","eslint-plugin-standard":"^3.0.1","eventsource-polyfill":"^0.9.6","express":"^4.15.2","extract-text-webpack-plugin":"^3.0.1","file-loader":"^0.10.1","friendly-errors-webpack-plugin":"^1.6.1","function-bind":"^1.0.2","html-webpack-plugin":"^2.28.0","http-proxy-middleware":"^0.17.4","inject-loader":"^3.0.0","isparta":"^4.0.0","jasmine-core":"^2.5.2","json-loader":"^0.5.4","karma":"^1.5.0","karma-coverage":"^1.1.1","karma-jasmine":"^1.0.2","karma-mocha":"^1.2.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.4.0","karma-sinon-chai":"^1.2.0","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.30","karma-webpack":"2","lolex":"^1.6.0","mocha":"^3.1.0","nightwatch":"^0.9.14","opn":"^5.1.0","ora":"^1.2.0","phantomjs-prebuilt":"^2.1.13","portfinder":"^1.0.13","selenium-server":"^3.3.1","shelljs":"^0.7.7","sinon":"^2.1.0","sinon-chai":"^2.9.0","url-loader":"^0.5.8","vue":"2.5.2","vue-hot-reload-api":"2.1.0","vue-html-loader":"^1.2.4","vue-loader":"^13.3.0","vue-style-loader":"3.0.1","vue-template-compiler":"2.5.2","webpack":"^3.7.1","webpack-dev-middleware":"^1.10.1","webpack-hot-middleware":"^2.17.1","webpack-merge":"^4.1.0"},"engines":{"node":">=6.9.0","npm":">= 3.0.0"},"files":["src","dist","es"],"greenkeeper":{"ignore":["extract-text-webpack-plugin","karma-webpack","webpack","webpack-merge"]},"homepage":"http://vue-chartjs.org","jsnext:main":"es/index.js","keywords":["ChartJs","Vue","Visualisation","Wrapper","Charts"],"license":"MIT","main":"dist/vue-chartjs.js","maintainers":[{"name":"Jakub Juszczak","email":"jakub@posteo.de","url":"http://www.jakubjuszczak.de"}],"module":"es/index.js","name":"vue-chartjs","peerDependencies":{"chart.js":"2.7.x"},"repository":{"type":"git","url":"git+ssh://git@github.com/apertureless/vue-chartjs.git"},"scripts":{"build":"yarn run release && yarn run build:es","build:es":"cross-env BABEL_ENV=es babel src --out-dir es","dev":"node build/dev-server.js","e2e":"node test/e2e/runner.js","lint":"eslint --ext .js,.vue src test/unit/specs test/e2e/specs","prepublishOnly":"yarn run lint && yarn run test && yarn run build","release":"webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js","test":"npm run unit","unit":"karma start test/unit/karma.conf.js --single-run"},"unpkg":"dist/vue-chartjs.min.js","version":"3.0.2"}
 
 /***/ }),
 /* 243 */
@@ -53802,7 +53802,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/app-component/App.vue"
+Component.options.__file = "src\\components\\app-component\\App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -53930,7 +53930,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/nav-component/top-menu.vue"
+Component.options.__file = "src\\components\\nav-component\\top-menu.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] top-menu.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -53988,7 +53988,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.nav-wrapper{\n\t\tbackground-color: black;\n\t\twidth: 1366px;\n\t\theight: 60px;\n\t\tz-index: 100;\n\t\tposition: fixed;\n\t\ttop: 0px;\n\t\tleft: 0px;\n}\n.avalith-image{\n\t\tmargin-top: 10px;\n\t\tmargin-left: 30px;\n\t\twidth: 35px;\n\t\theight: 39px;\n}\n@media screen and (max-width: 650px) {\n.nav-wrapper{\n\t\tbackground-color: black;\n\t\twidth: 650px;\n\t\theight: 60px;\n\t\tz-index: 100;\n\t\tposition: absolute;\n\t\ttop: 0px;\n\t\tleft: 0px;\n}\n}", ""]);
+exports.push([module.i, "\n.nav-wrapper{\r\n\t\tbackground-color: black;\r\n\t\twidth: 1366px;\r\n\t\theight: 60px;\r\n\t\tz-index: 100;\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tleft: 0px;\n}\n.avalith-image{\r\n\t\tmargin-top: 10px;\r\n\t\tmargin-left: 30px;\r\n\t\twidth: 35px;\r\n\t\theight: 39px;\n}\n@media screen and (max-width: 650px) {\n.nav-wrapper{\r\n\t\tbackground-color: black;\r\n\t\twidth: 650px;\r\n\t\theight: 60px;\r\n\t\tz-index: 100;\r\n\t\tposition: absolute;\r\n\t\ttop: 0px;\r\n\t\tleft: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -54125,7 +54125,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/sideBar-component/side-bar.vue"
+Component.options.__file = "src\\components\\sideBar-component\\side-bar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] side-bar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -54183,7 +54183,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.side-user {\n\tbackground-color: #3F3F3F;\n\twidth: 300px;\n\theight: 135px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: inherit;\n}\n.side-menu{\n\tbackground-color: black;\n\twidth: 300px;\n\theight: 100%;\n\tz-index: 50;\n\tposition: fixed;\n}\n.user-data{\n\tdisplay: flex;\n\tflex-direction: column;\n\tmargin-top: 30px;\n\tcolor: white;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n}\n.dev-name{\n\tfont-family: Roboto;\n\tfont-size: 24px;\n\tfont-weight: 300;\n\tline-height: 1;\n\tletter-spacing: 0.2px;\n\tcolor: #ffffff;\n}\n.dev-info{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #ffffff;\n\tmargin-top: 3px;\n}\n.side-input{\n\tmargin-top:208px;\n\tmargin-left:30px;\n\tmargin-right: 30px;\n}\n.input-search \t\t{\n\tbackground:transparent;\n\tborder: none;\n\tborder-bottom: 1px solid white;\n\ttop:-20px;\n\tfont-size:18px;\n\tcolor: white;\n\twidth: 240px\n}\n.input-search::-webkit-input-placeholder {\ncolor: white !important;\n}\n.input-search:-ms-input-placeholder {  \ncolor: white !important;\n}\n.check-options{\n\tmargin-top: 50px;\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n\tmargin-left: 31px;\n}\n.radio-container {\n\tmargin-top: 36px;\n    display: block;\n    position: relative;\n    padding-left: 35px;\n    margin-bottom: 12px;\n    cursor: pointer;\n    font-size: 18px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n.radio-container input {\n    position: absolute;\n    opacity: 0;\n}\n.checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 30px;\n    width: 30px;\n    background-color: black;\n    border: 2px solid white;\n    border-radius: 50%;\n}\n.checkmark:after {\n    content: \"\";\n    position: absolute;\n    display: none;\n}\n.radio-container input:checked ~ .checkmark:after {\n    display: block;\n}\n.radio-container .checkmark:after {\n \ttop: 5px;\n\tleft: 5px;\n\twidth: 16px;\n\theight: 16px;\n\tborder-radius: 50%;\n\tbackground: white;\n}\n@media screen and (max-width: 650px) {\n.side-menu{\n\tbackground-color: black;\n\twidth: 650px;\n\theight: 100px;\n\tz-index: 50;\n\tposition: absolute;\n\tmargin-top: -100px;\n}\n.side-user {\n\tbackground-color: #3F3F3F;\n\twidth: 135px;\n\theight: 100px;\n\tmargin-top: 0px;\n\tmargin-left: 0px;\n\tz-index: 55;\n\tposition: inherit;\n}\n.user-data{\n\tdisplay: flex;\n\tflex-direction: column;\n\tmargin-left: 0px;\n\tcolor: white;\n\tletter-spacing: 0.2px;\n\ttext-align: center;\n\tmargin-top: 15px;\n\tmargin-left: 7px;\n\tposition: absolute;\n}\n.dev-name{\n\tfont-family: Roboto;\n\tfont-size: 17px;\n\tfont-weight: 300;\n\tline-height: 1;\n\tletter-spacing: 0.2px;\n\tcolor: #ffffff;\n}\n.dev-info{\n\tfont-family: Roboto;\n\tfont-size: 15px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #ffffff;\n\tmargin-top: 3px;\n}\n.side-input{\n\tmargin-top:30px;\n\tmargin-left:150px;\n}\n.input-search \t\t{\n\tbackground:transparent;\n\tborder: none;\n\tborder-bottom: 1px solid white;\n\ttop:-20px;\n\tfont-size:18px;\n\tcolor: white;\n\twidth: 150px;\n}\n.input-search::-webkit-input-placeholder {\ncolor: white !important;\n}\n.input-search:-ms-input-placeholder {  \ncolor: white !important;\n}\n.check-options{\n\tfont-family: Roboto;\n\tfont-size: 18px;\n\tfont-weight: 300;\n\tline-height: 1.33;\n\tletter-spacing: 0.2px;\n\tcolor: #f8f8f8;\n\tmargin-top: -25px;\n\tmargin-left: 320px;\n\tdisplay: flex;\n}\n.radio-container {\n\tmargin-top: 1px;\n\tmargin-left: 15px;\n    display: block;\n    position: relative;\n    cursor: pointer;\n    font-size: 18px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n}", ""]);
+exports.push([module.i, "\n.side-user {\r\n\tbackground-color: #3F3F3F;\r\n\twidth: 300px;\r\n\theight: 135px;\r\n\tmargin-top: 0px;\r\n\tmargin-left: 0px;\r\n\tz-index: 55;\r\n\tposition: inherit;\n}\n.side-menu{\r\n\tbackground-color: black;\r\n\twidth: 300px;\r\n\theight: 100%;\r\n\tz-index: 50;\r\n\tposition: fixed;\n}\n.user-data{\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tmargin-top: 30px;\r\n\tcolor: white;\r\n\tletter-spacing: 0.2px;\r\n\ttext-align: center;\n}\n.dev-name{\r\n\tfont-family: Roboto;\r\n\tfont-size: 24px;\r\n\tfont-weight: 300;\r\n\tline-height: 1;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #ffffff;\n}\n.dev-info{\r\n\tfont-family: Roboto;\r\n\tfont-size: 18px;\r\n\tfont-weight: 300;\r\n\tline-height: 1.33;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #ffffff;\r\n\tmargin-top: 3px;\n}\n.side-input{\r\n\tmargin-top:208px;\r\n\tmargin-left:30px;\r\n\tmargin-right: 30px;\n}\n.input-search \t\t{\r\n\tbackground:transparent;\r\n\tborder: none;\r\n\tborder-bottom: 1px solid white;\r\n\ttop:-20px;\r\n\tfont-size:18px;\r\n\tcolor: white;\r\n\twidth: 240px\n}\n.input-search::-webkit-input-placeholder {\r\ncolor: white !important;\n}\n.input-search:-ms-input-placeholder {  \r\ncolor: white !important;\n}\n.check-options{\r\n\tmargin-top: 50px;\r\n\tfont-family: Roboto;\r\n\tfont-size: 18px;\r\n\tfont-weight: 300;\r\n\tline-height: 1.33;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #f8f8f8;\r\n\tmargin-left: 31px;\n}\n.radio-container {\r\n\tmargin-top: 36px;\r\n    display: block;\r\n    position: relative;\r\n    padding-left: 35px;\r\n    margin-bottom: 12px;\r\n    cursor: pointer;\r\n    font-size: 18px;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\n}\n.radio-container input {\r\n    position: absolute;\r\n    opacity: 0;\n}\n.checkmark {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    height: 30px;\r\n    width: 30px;\r\n    background-color: black;\r\n    border: 2px solid white;\r\n    border-radius: 50%;\n}\n.checkmark:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    display: none;\n}\n.radio-container input:checked ~ .checkmark:after {\r\n    display: block;\n}\n.radio-container .checkmark:after {\r\n \ttop: 5px;\r\n\tleft: 5px;\r\n\twidth: 16px;\r\n\theight: 16px;\r\n\tborder-radius: 50%;\r\n\tbackground: white;\n}\n@media screen and (max-width: 650px) {\n.side-menu{\r\n\tbackground-color: black;\r\n\twidth: 650px;\r\n\theight: 100px;\r\n\tz-index: 50;\r\n\tposition: absolute;\r\n\tmargin-top: -100px;\n}\n.side-user {\r\n\tbackground-color: #3F3F3F;\r\n\twidth: 135px;\r\n\theight: 100px;\r\n\tmargin-top: 0px;\r\n\tmargin-left: 0px;\r\n\tz-index: 55;\r\n\tposition: inherit;\n}\n.user-data{\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tmargin-left: 0px;\r\n\tcolor: white;\r\n\tletter-spacing: 0.2px;\r\n\ttext-align: center;\r\n\tmargin-top: 15px;\r\n\tmargin-left: 7px;\r\n\tposition: absolute;\n}\n.dev-name{\r\n\tfont-family: Roboto;\r\n\tfont-size: 17px;\r\n\tfont-weight: 300;\r\n\tline-height: 1;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #ffffff;\n}\n.dev-info{\r\n\tfont-family: Roboto;\r\n\tfont-size: 15px;\r\n\tfont-weight: 300;\r\n\tline-height: 1.33;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #ffffff;\r\n\tmargin-top: 3px;\n}\n.side-input{\r\n\tmargin-top:30px;\r\n\tmargin-left:150px;\n}\n.input-search \t\t{\r\n\tbackground:transparent;\r\n\tborder: none;\r\n\tborder-bottom: 1px solid white;\r\n\ttop:-20px;\r\n\tfont-size:18px;\r\n\tcolor: white;\r\n\twidth: 150px;\n}\n.input-search::-webkit-input-placeholder {\r\ncolor: white !important;\n}\n.input-search:-ms-input-placeholder {  \r\ncolor: white !important;\n}\n.check-options{\r\n\tfont-family: Roboto;\r\n\tfont-size: 18px;\r\n\tfont-weight: 300;\r\n\tline-height: 1.33;\r\n\tletter-spacing: 0.2px;\r\n\tcolor: #f8f8f8;\r\n\tmargin-top: -25px;\r\n\tmargin-left: 320px;\r\n\tdisplay: flex;\n}\n.radio-container {\r\n\tmargin-top: 1px;\r\n\tmargin-left: 15px;\r\n    display: block;\r\n    position: relative;\r\n    cursor: pointer;\r\n    font-size: 18px;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\n}\n}", ""]);
 
 // exports
 
@@ -54406,7 +54406,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/dashboard-component/tec-dashboard.vue"
+Component.options.__file = "src\\components\\dashboard-component\\tec-dashboard.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] tec-dashboard.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -54464,7 +54464,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.dash-title{\n\t\tpadding: 30px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto , sans-serif;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\n\t\twidth: 100%;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n\t\tbackground-color: #E6E6E6;\n}\n.dash-toggle{\n\t\twidth: 100%;\t\t\n\t\tmargin-top: 60px;\n\t\tmargin-left: 300px;\n\t\tz-index: 50;\n\t\tbackground-color: #E6E6E6;\n}\n.card-container{\n\t\tdisplay: flex;\n\t\tflex-direction: row;\n\t\tflex-wrap: wrap;\n\t\talign-items: flex-start;\n}\n.card-columns{\n\t\tdisplay: inline-block; \n\t\tcolumn-break-inside: avoid;\n}\n@media screen and (max-width: 650px) {\n.card-container{\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tflex-wrap: wrap;\n\t\talign-items: center;\n}\n.dash-toggle{\n\t\twidth: 100%;\n\t\tmargin-top: 160px;\n\t\tz-index: 50;\n\t\tmargin-left: 0px;\n\t\theight: 0px;\n\t\tpadding-top: 5%;\n\t\tbackground-color: #E6E6E6;\n}\n.dash-menu{\n\t\twidth: 100%;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 0px;\n\t\tz-index: 50;\n\t\tbackground-color: #E6E6E6;\n}\n.dash-title{\n\t\tmargin-left: 180px;\n\t\tsize: 24px;\n\t\tfont-family: Roboto , sans-serif;\n\t\tfont-size: 24px;\n\t\tfont-weight: 300;\n\t\tline-height: 1;\n\t\tletter-spacing: 0.2px;\n\t\ttext-align: left;\n\t\tcolor: var(--black-two);\n\t\tpadding-bottom: 5%;\n}\n}", ""]);
+exports.push([module.i, "\n.dash-title{\r\n\t\tpadding: 30px;\r\n\t\tsize: 24px;\r\n\t\tfont-family: Roboto , sans-serif;\r\n\t\tfont-size: 24px;\r\n\t\tfont-weight: 300;\r\n\t\tline-height: 1;\r\n\t\tletter-spacing: 0.2px;\r\n\t\ttext-align: left;\r\n\t\tcolor: var(--black-two);\n}\n.dash-menu{\r\n\t\twidth: 100%;\r\n\t\tmargin-top: 60px;\r\n\t\tmargin-left: 0px;\r\n\t\tz-index: 50;\r\n\t\tbackground-color: #E6E6E6;\n}\n.dash-toggle{\r\n\t\twidth: 100%;\t\t\r\n\t\tmargin-top: 60px;\r\n\t\tmargin-left: 300px;\r\n\t\tz-index: 50;\r\n\t\tbackground-color: #E6E6E6;\n}\n.card-container{\r\n\t\tdisplay: flex;\r\n\t\tflex-direction: row;\r\n\t\tflex-wrap: wrap;\r\n\t\talign-items: flex-start;\n}\n.card-columns{\r\n\t\tdisplay: inline-block; \r\n\t\tcolumn-break-inside: avoid;\n}\n@media screen and (max-width: 650px) {\n.card-container{\r\n\t\tdisplay: flex;\r\n\t\tflex-direction: column;\r\n\t\tflex-wrap: wrap;\r\n\t\talign-items: center;\r\n\t\tbackground-color: #E6E6E6;\n}\n.dash-toggle{\r\n\t\twidth: 100%;\r\n\t\tmargin-top: 160px;\r\n\t\tz-index: 50;\r\n\t\tmargin-left: 0px;\r\n\t\theight: 0px;\r\n\t\tpadding-top: 5%;\r\n\t\tbackground-color: #E6E6E6;\n}\n.dash-menu{\r\n\t\twidth: 100%;\r\n\t\tmargin-top: 60px;\r\n\t\tmargin-left: 0px;\r\n\t\tz-index: 50;\r\n\t\tbackground-color: #E6E6E6;\n}\n.dash-title{\r\n\t\tmargin-left: 0px;\r\n\t\tmargin-bottom: 0px;\r\n\t\tsize: 24px;\r\n\t\tfont-family: Roboto , sans-serif;\r\n\t\tfont-size: 24px;\r\n\t\tfont-weight: 300;\r\n\t\tline-height: 1;\r\n\t\tletter-spacing: 0.2px;\r\n\t\ttext-align: center;\r\n\t\tcolor: var(--black-two);\r\n\t\tpadding-bottom: 5%;\r\n\t\tbackground-color: #E6E6E6;\n}\n}", ""]);
 
 // exports
 
@@ -54582,6 +54582,12 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 /* 260 */
@@ -54615,7 +54621,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/card-component/tec-card.vue"
+Component.options.__file = "src\\components\\card-component\\tec-card.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] tec-card.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -54673,7 +54679,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card {\n        width: 325px;\n        background-color: white;\n        margin-bottom: 40px;\n    \ttransition: 0.3s;\n        margin-left: 20px;\n        margin: 15px;\n}\n.image-card{\n        width: 325px;\n        align-content: center;\n}\n.container {\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 1.33;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: var(--black);\n        margin-right: 31px;\n        margin-left: 31px;\n        margin-top: 33px;\n        margin-bottom: 33px;\n\t    padding: 2px 16px;\n}\n@media screen and (max-width: 650px) {\n.card {\n        width: 650px;\n        background-color: white;\n        margin-bottom: 40px;\n        transition: 0.3s;\n        align-items: baseline;\n}\n.image-card{\n        width: 650px;\n        height: 300px;\n        align-content: center;\n}\n.container {\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 1.33;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: var(--black);\n        margin-right: 31px;\n        margin-left: 31px;\n        margin-top: 33px;\n        margin-bottom: 33px;\n        padding: 2px 16px;\n}\n}", ""]);
+exports.push([module.i, "\n.card {\r\n        width: 325px;\r\n        background-color: white;\r\n        margin-bottom: 40px;\r\n    \ttransition: 0.3s;\r\n        margin-left: 20px;\r\n        margin: 15px;\n}\n.image-card{\r\n        width: 325px;\r\n        align-content: center;\n}\n.container {\r\n        font-family: Roboto;\r\n        font-size: 18px;\r\n        font-weight: 300;\r\n        line-height: 1.33;\r\n        letter-spacing: 0.2px;\r\n        text-align: left;\r\n        color: var(--black);\r\n        margin-right: 31px;\r\n        margin-left: 31px;\r\n        margin-top: 33px;\r\n        margin-bottom: 33px;\r\n\t    padding: 2px 16px;\n}\n@media screen and (max-width: 650px) {\n.card {\r\n        width: 650px;\r\n        background-color: white;\r\n        margin-bottom: 40px;\r\n        transition: 0.3s;\r\n        align-items: baseline;\n}\n.image-card{\r\n        width: 650px;\r\n        height: 300px;\r\n        align-content: center;\n}\n.container {\r\n        font-family: Roboto;\r\n        font-size: 18px;\r\n        font-weight: 300;\r\n        line-height: 1.33;\r\n        letter-spacing: 0.2px;\r\n        text-align: left;\r\n        color: var(--black);\r\n        margin-right: 31px;\r\n        margin-left: 31px;\r\n        margin-top: 33px;\r\n        margin-bottom: 33px;\r\n        padding: 2px 16px;\n}\n}", ""]);
 
 // exports
 
@@ -54786,7 +54792,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/languageInfo-component/lang-info.vue"
+Component.options.__file = "src\\components\\languageInfo-component\\lang-info.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] lang-info.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -54844,7 +54850,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, "\n.lang-info-menu{\n        background-color: #ffffff;\n        width: 1366px;\n        margin-top: 60px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.lang-info-toggle{\n        background-color: #ffffff;\n        width: 1366px;\n        margin-top: 60px;\n        margin-left: 300px;\n        z-index: 50;\n}\n.lang-image {\n        width: 1066px;\n        height: 388px;\n        position: fixed;\n}\n.img-lang{\n        width: 1366px;\n        height: 170px;\n        margin-top:0px;\n        margin-left: 0px;\n}\n.container-lang {\n        position: relative;\n        color: white;\n}\n.centered-lang {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        width: 212px;\n        height: 26px;\n        font-family: Roboto;\n        font-size: 36px;\n        font-weight: bold;\n        line-height: 0.67;\n        letter-spacing: 0.4px;\n        text-align: left;\n        color: #ffffff;\n}\n.top-left-lang {\n        position: absolute;\n        top: 45px;\n        left: 0px;\n        width: 109px;\n        height: 36px;\n        background-color: black;\n        color: white;\n        font-family: Roboto;\n        font-size: 18px;\n        text-align: right;\n}\n.top-left-lang-text{\n}\n.lang-container{\n        display: flex;\n        flex-direction: row;\n        color: white;\n}\n.lang-text-container{\n        font-family: Roboto;\n        font-size: 18px;\n        font-weight: 300;\n        line-height: 2;\n        letter-spacing: 0.2px;\n        text-align: left;\n        color: black;\n        margin-top:50px; \n        margin-left:50px;\n        margin-right: 50px;\n        margin-bottom: 50px;\n}\n.chart{\n        margin-top: 50px;\n        margin-right: 50px;\n        width: 250px;\n        height: 250px;\n}\n.lang-chart-container{\n}\n@media screen and (max-width: 650px) {\n.lang-info-menu{\n        background-color: #ffffff;\n        width: 650px;\n        margin-top: 60px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.lang-info-toggle{\n        background-color: #ffffff;\n        width: 650px;\n        margin-top: 160px;\n        margin-left: 0px;\n        z-index: 50;\n}\n.img-lang{\n        width: 650px;\n        height: 170px;\n        margin-top:0px;\n        margin-left: 0px;\n}\n}        \n", ""]);
+exports.push([module.i, "\n.lang-info-menu{\r\n        background-color: #ffffff;\r\n        width: 1366px;\r\n        margin-top: 60px;\r\n        margin-left: 0px;\r\n        z-index: 50;\n}\n.lang-info-toggle{\r\n        background-color: #ffffff;\r\n        width: 1366px;\r\n        margin-top: 60px;\r\n        margin-left: 300px;\r\n        z-index: 50;\n}\n.lang-image {\r\n        width: 1066px;\r\n        height: 388px;\r\n        position: fixed;\n}\n.img-lang{\r\n        width: 1366px;\r\n        height: 170px;\r\n        margin-top:0px;\r\n        margin-left: 0px;\n}\n.container-lang {\r\n        position: relative;\r\n        color: white;\n}\n.centered-lang {\r\n        position: absolute;\r\n        top: 50%;\r\n        left: 50%;\r\n        transform: translate(-50%, -50%);\r\n        width: 212px;\r\n        height: 26px;\r\n        font-family: Roboto;\r\n        font-size: 36px;\r\n        font-weight: bold;\r\n        line-height: 0.67;\r\n        letter-spacing: 0.4px;\r\n        text-align: left;\r\n        color: #ffffff;\n}\n.top-left-lang {\r\n        position: absolute;\r\n        top: 45px;\r\n        left: 0px;\r\n        width: 109px;\r\n        height: 36px;\r\n        background-color: black;\r\n        color: white;\r\n        font-family: Roboto;\r\n        font-size: 18px;\r\n        text-align: right;\n}\n.top-left-lang-text{\n}\n.lang-container{\r\n        display: flex;\r\n        flex-direction: row;\r\n        color: white;\n}\n.lang-text-container{\r\n        font-family: Roboto;\r\n        font-size: 18px;\r\n        font-weight: 300;\r\n        line-height: 2;\r\n        letter-spacing: 0.2px;\r\n        text-align: left;\r\n        color: black;\r\n        margin-top:50px; \r\n        margin-left:50px;\r\n        margin-right: 50px;\r\n        margin-bottom: 50px;\n}\n.chart{\r\n        margin-top: 50px;\r\n        margin-right: 50px;\r\n        width: 250px;\r\n        height: 250px;\n}\n.lang-chart-container{\n}\n@media screen and (max-width: 650px) {\n.lang-info-menu{\r\n        background-color: #ffffff;\r\n        width: 650px;\r\n        margin-top: 60px;\r\n        margin-left: 0px;\r\n        z-index: 50;\n}\n.lang-info-toggle{\r\n        background-color: #ffffff;\r\n        width: 650px;\r\n        margin-top: 160px;\r\n        margin-left: 0px;\r\n        z-index: 50;\n}\n.img-lang{\r\n        width: 650px;\r\n        height: 170px;\r\n        margin-top:0px;\r\n        margin-left: 0px;\n}\n}        \r\n", ""]);
 
 // exports
 
@@ -54975,7 +54981,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/components/chart-component/chart-doug.vue"
+Component.options.__file = "src\\components\\chart-component\\chart-doug.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -55158,24 +55164,29 @@ var render = function() {
                 ],
                 1
               )
-            : _c("div", { staticClass: "dash-toggle" }, [
-                _c("h1", { staticClass: "dash-title" }, [
-                  _vm._v("Languages and Technologies")
-                ]),
-                _vm._v(" "),
-                !_vm.languages.length
-                  ? _c("div", [_vm._v("Nothing Here")])
-                  : _c(
-                      "div",
-                      { staticClass: "card-container" },
-                      _vm._l(_vm.languagesFilter, function(l) {
-                        return _c("tec-card", {
-                          key: l.cardId,
-                          attrs: { openCard: _vm.openCard, language: l }
+            : _c(
+                "div",
+                { staticClass: "dash-toggle" },
+                [
+                  _c("h1", { staticClass: "dash-title" }, [
+                    _vm._v("Languages and Technologies")
+                  ]),
+                  _vm._v(" "),
+                  !_vm.languages.length
+                    ? _c("div", [_vm._v("Nothing Here")])
+                    : _c(
+                        "div",
+                        { staticClass: "card-container" },
+                        _vm._l(_vm.languagesFilter, function(l) {
+                          return _c("tec-card", {
+                            key: l.cardId,
+                            attrs: { openCard: _vm.openCard, language: l }
+                          })
                         })
-                      })
-                    )
-              ])
+                      )
+                ],
+                1
+              )
         ])
       : _c("div", [
           _vm.mutatedCardOpen
@@ -55203,15 +55214,8 @@ var render = function() {
                   !_vm.languages.length
                     ? _c("div", [_c("h3", [_vm._v("Nothing Here")])])
                     : _c(
-                        "b-card-group",
-                        {
-                          attrs: {
-                            "display:": "",
-                            "inline-block": "",
-                            "column-break-inside:": "",
-                            avoid: ""
-                          }
-                        },
+                        "div",
+                        { staticClass: "card-container" },
                         _vm._l(_vm.languagesFilter, function(l) {
                           return _c("tec-card", {
                             key: l.cardId,
@@ -60030,7 +60034,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/form-group/form-group.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\form-group\\form-group.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -60675,7 +60679,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/form-input/form-input.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\form-input\\form-input.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -61169,7 +61173,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/form-file/form-file.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\form-file\\form-file.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -62397,7 +62401,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/modal/modal.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\modal\\modal.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -64059,7 +64063,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/progress/progress.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\progress\\progress.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -64294,7 +64298,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules/bootstrap-vue/es/components/table/table.vue"
+Component.options.__file = "node_modules\\bootstrap-vue\\es\\components\\table\\table.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */

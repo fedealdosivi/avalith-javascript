@@ -7,9 +7,12 @@
 		<div v-else class="dash-toggle">
 			<h1 class="dash-title">Languages and Technologies</h1>
 			<div v-if="!languages.length">Nothing Here</div>
-			<div class="card-container" v-else>
+			<!--><div class="card-container" v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</div>
+			<!--><b-card-group v-else>
+				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
+			</b-card-group>
 		</div>
 	</div>
 	<div v-else>
@@ -19,7 +22,10 @@
 		<div v-else class="dash-menu">
 			<div class="dash-title">Languages and Technologies</div>
 			<div v-if="!languages.length"><h3>Nothing Here</h3></div>
-			<b-card-group display: inline-block column-break-inside: avoid v-else>
+			<!--><div class="card-container" v-else>
+				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
+			</div>
+			<!--><b-card-group v-else>
 				<tec-card v-for="l in languagesFilter" :openCard="openCard" :key=l.cardId :language="l"></tec-card>
 			</b-card-group>
 		</div>

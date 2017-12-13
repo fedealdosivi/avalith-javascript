@@ -43,6 +43,7 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
+		background-color: #E6E6E6;
 	}
 
 	.dash-toggle{
@@ -64,15 +65,17 @@
 	}
 
 	.dash-title{
-		margin-left: 180px;
+		margin-left: 0px;
+		margin-bottom: 0px;
 		size: 24px;
 		font-family: Roboto , sans-serif;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 1;
 		letter-spacing: 0.2px;
-		text-align: left;
+		text-align: center;
 		color: var(--black-two);
 		padding-bottom: 5%;
+		background-color: #E6E6E6;
 		}
 	}

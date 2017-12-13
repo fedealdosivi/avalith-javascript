@@ -1,22 +1,4 @@
 
-h3{
-	color: white;
-	size: 24px;
-	letter-spacing: 0.2px;
-}
-
-h4{
-	word-spacing: 5 px;
-	size: 3 px;
-	color: black;
-}
-
-h5{
-	word-spacing: 10 px;
-	size: 5 px;
-	color: grey;
-}
-
 body{
 	margin: 0;
 	padding: 0;
