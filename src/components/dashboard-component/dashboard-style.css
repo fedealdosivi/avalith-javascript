@@ -26,7 +26,8 @@
 	}
 
 	.card-container{
-		display: flex;
+		column-count: 3;
+		display: inline-block;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;

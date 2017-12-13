@@ -2,7 +2,7 @@
         width: 325px;
         background-color: white;
         margin-bottom: 40px;
-    	transition: 0.3s;
+        display:inline-block;
         margin-left: 20px;
         margin: 15px;
     }
